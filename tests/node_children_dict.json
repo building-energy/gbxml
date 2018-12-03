@@ -1,0 +1,74 @@
+{
+    "schema {'{http://www.w3.org/2001/XMLSchema-instance}schemaLocation', 'elementFormDefault', 'attributeFormDefault', 'targetNamespace', 'version'}": {
+        "annotation {None}": {
+            "documentation {None}": null
+        },
+        "element {'name', 'type'}": {
+            "annotation {None}": {
+                "appinfo {None}": null,
+                "documentation {None}": null
+            },
+            "complexType {None}": {
+                "all {None}": {
+                    "element {'minOccurs', 'ref'}": null
+                },
+                "annotation {None}": {
+                    "documentation {None}": null
+                },
+                "attribute {'name', 'default', 'use', 'type'}": {
+                    "annotation {None}": {
+                        "appinfo {None}": null,
+                        "documentation {None}": null
+                    },
+                    "simpleType {None}": {
+                        "restriction {'base'}": {
+                            "enumeration {'value'}": null
+                        },
+                        "union {'memberTypes'}": null
+                    }
+                },
+                "choice {'maxOccurs', 'minOccurs'}": {
+                    "any {'processContents', 'minOccurs', 'maxOccurs', 'namespace'}": null,
+                    "element {'maxOccurs', 'minOccurs', 'ref'}": {
+                        "annotation {None}": {
+                            "documentation {None}": null
+                        }
+                    }
+                },
+                "simpleContent {None}": {
+                    "extension {'base'}": {
+                        "attribute {'name', 'use', 'type'}": {
+                            "annotation {None}": {
+                                "documentation {None}": null
+                            },
+                            "simpleType {None}": {
+                                "restriction {'base'}": {
+                                    "enumeration {'value'}": null
+                                },
+                                "union {'memberTypes'}": null
+                            }
+                        }
+                    }
+                }
+            },
+            "simpleType {None}": {
+                "restriction {'base'}": {
+                    "maxInclusive {'value'}": null,
+                    "minInclusive {'value'}": null
+                }
+            }
+        },
+        "simpleType {'name'}": {
+            "annotation {None}": {
+                "documentation {None}": null
+            },
+            "restriction {'base'}": {
+                "enumeration {'value'}": {
+                    "annotation {None}": {
+                        "documentation {None}": null
+                    }
+                }
+            }
+        }
+    }
+}
