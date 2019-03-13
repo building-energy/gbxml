@@ -362,36 +362,43 @@ class Gbxml():
             element=self.element(element)
         st='.//gbxml:%s' % label
         return self.xpath(element,st)
-    
-  
-# FUNCTIONS - CONSTRUCTION
-        
 
-    def construction_materials(self,construction_element):
-        """Returns the material elements of a construction in order
-        
-        Arguments:
-            - construction_element (lxml._Element or str): This a lxml._Element object
-                or a string with the element id.
-                
-        Return value:
-            - material_elements (list)
-        
-        """
-        l=[]
+
+# CONSTRUCTION FUNCTIONS
+
+    def construction_layers(self,construction_element):
+        "Returns the layer elements of a construction"
         if isinstance(construction_element,str):
             construction_element=self.element(construction_element,label='Construction')
-        layerIds=self.child_elements(construction_element,label='LayerId')
-        for layerId in layerIds:
-            layer_id=layerId.get('layerIdRef')
-            layer=self.element(layer_id,label='Layer')
-            materialIds=self.child_elements(layer,label='MaterialId')
-            for materialId in materialIds:
-                material_id=materialId.get('materialIdRef')
-                material=self.element(material_id,label='Material')
-                l.append(material)
-        return l
-    
+        layerId_elements=self.child_elements(construction_element,'LayerId')
+        layer_elements=[self.element(layerId_element.get('layerIdRef'),'Layer') 
+                            for layerId_element in layerId_elements]
+        return layer_elements
+
+    def construction_materials(self,construction_element):
+        "Returns the layer elements of a construction"
+        if isinstance(construction_element,str):
+            construction_element=self.element(construction_element,label='Construction')
+        layer_elements=self.construction_layers(construction_element)
+        material_elements=[]
+        for layer_element in layer_elements:
+            material_elements+=self.layer_materials(layer_element)
+        return material_elements
+
+
+# LAYER FUNCTIONS
+        
+    def layer_materials(self,layer_element):
+        "Returns the layer elements of a construction"
+        if isinstance(layer_element,str):
+            layer_element=self.element(layer_element,label='Layer')
+        materialId_elements=self.child_elements(layer_element,'MaterialId')
+        material_elements=[self.element(materialId_element.get('materialIdRef'),'Material') 
+                            for materialId_element in materialId_elements]
+        return material_elements
+
+            
+  
 # OPENING FUNCTIONS
         
     def opening_coordinates(self,opening_element):
@@ -421,7 +428,7 @@ class Gbxml():
             l.append(t)
         return l
     
-# FUNCTIONS - SURFACE
+# SURFACE FUNCTIONS
     
     def surface_azimuth(self,surface_element):
         """Returns the azimuth of a surface
@@ -528,6 +535,36 @@ class Gbxml():
             tilt=l[0]
             return float(self.text_value(tilt))
 
+    def surface_construction(self,surface_element):
+        "Returns the construction element of a surface"
+        if isinstance(surface_element,str):
+            surface_element=self.element(surface_element,label='Surface')
+        construction_id=surface_element.get('constructionIdRef')
+        construction_element=self.element(construction_id,'Construction')
+        return construction_element
+
+    def surface_layers(self,surface_element):
+        "Returns the layer elements of a surface"
+        if isinstance(surface_element,str):
+            surface_element=self.element(surface_element,label='Surface')
+        construction_element=self.surface_construction(surface_element)
+        layer_elements=self.construction_layers(construction_element)
+        return layer_elements
+        
+    def surface_materials(self,surface_element):
+        "Returns the layer elements of a surface"
+        if isinstance(surface_element,str):
+            surface_element=self.element(surface_element,label='Surface')
+        construction_element=self.surface_construction(surface_element)
+        material_elements=self.construction_materials(construction_element)
+        return material_elements
+        
+
+
+
+        
+         
+            
         
         
 
@@ -620,6 +657,8 @@ class Gbxml():
         
         
         
+    
+    # LAYERS
     
     
     

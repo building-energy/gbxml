@@ -172,7 +172,15 @@ class Test_gbxml(unittest.TestCase):
         self.assertEqual(st,check)
     
     
-# FUNCTIONS - CONSTRUCTION
+# CONSTRUCTION FUNCTIONS
+        
+    def test_gbxml_construction_layers(self):
+        g=Gbxml(config.xml,config.xsd)
+        l=g.construction_layers('CEIL')
+        layer_ids=[x.get('id') for x in l]
+        check=['layer-CEIL']
+        self.assertEqual(layer_ids,check)
+        
         
     def test_gbxml_construction_materials(self):
         g=Gbxml(config.xml,config.xsd)
@@ -181,6 +189,17 @@ class Test_gbxml(unittest.TestCase):
         check=['SCP-0.005', 'TMF-0.02', 'Cavity-AIR-0.2', 'GPB-0.01']
         self.assertEqual(material_ids,check)
         
+        
+
+# LAYER FUNCTIONS
+        
+    def test_gbxml_layer_materials(self):
+        g=Gbxml(config.xml,config.xsd)
+        l=g.layer_materials('layer-CEIL')
+        material_ids=[x.get('id') for x in l]
+        check=['SCP-0.005', 'TMF-0.02', 'Cavity-AIR-0.2', 'GPB-0.01']
+        self.assertEqual(material_ids,check)
+    
         
 # OPENING FUNCTIONS
         
@@ -228,8 +247,28 @@ class Test_gbxml(unittest.TestCase):
         st=g.surface_tilt('surface-1')
         check=180
         self.assertEqual(st,check)
+    
+    def test_gbxml_surface_construction(self):
+        g=Gbxml(config.xml,config.xsd)
+        e=g.surface_construction('surface-1')
+        check='STD_FLO1'
+        self.assertEqual(e.get('id'),check)
+    
+    def test_gbxml_surface_layers(self):
+        g=Gbxml(config.xml,config.xsd)
+        l=g.surface_layers('surface-1')
+        layer_ids=[x.get('id') for x in l]
+        check=['layer-STD_FLO1']
+        self.assertEqual(layer_ids,check)
         
-        
+    def test_gbxml_surface_materials(self):
+        g=Gbxml(config.xml,config.xsd)
+        l=g.surface_materials('surface-1')
+        material_ids=[x.get('id') for x in l]
+        check=['STD_PH1-0.0982','STD_CC2-0.1','Cavity-AIR-0.05','STD_FBA-0.02']
+        self.assertEqual(material_ids,check)
+    
+    
 # FUNCTIONS - WINDOWTYPE
         
     def test_gbxml_windowType_materials(self):

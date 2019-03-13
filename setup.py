@@ -157,7 +157,8 @@ setup(
     #
     # If using Python 2.6 or earlier, then these have to be included in
     # MANIFEST.in as well.
-    package_data={  # Optional
+    package_data={'blank.xml':[r'gbxml/blank.xml']  
+            # Optional
         #'sample': ['package_data.dat'],
     },
 
