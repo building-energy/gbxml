@@ -6,6 +6,127 @@ from .gbxsd import Gbxsd
 import pkgutil
 from io import BytesIO
 
+ns={'gbxml':'http://www.gbxml.org/schema'}
+
+# OUTPUT
+
+def xpath(element,st_xpath):
+    """Returns the result of an xpath operation on the gbXML file
+    
+    Arguments
+        - st_xpath (str): the xpath string
+        - element (lxml.etree._Element): the element for the xpath operation. The 
+            default is the root element
+    
+    """
+    return element.xpath(st_xpath,namespaces=ns)
+
+# QUERYING
+
+def get_child(element,id=None,label='*'):
+        """Returns the child of an element
+        
+        Arguments:
+            - id (str): the id of the element
+            - label (str): the label of the element
+        
+        """
+        if id is None:
+            return get_children(element,label)
+        else:
+            st='./gbxml:%s[@id="%s"]' % (label,id)
+            return xpath(element,st)[0]
+        
+
+def get_child_text(element,label='*',dtype=None):
+    "Returns the first child text value, or None"
+    children=get_children(element,label)
+    if children: 
+        if dtype is None:
+            return children[0].text
+        else:
+            return dtype(children[0].text)
+    else:
+        return None
+
+def get_children(element,label='*'):
+    """Returns the child elements of an element
+    
+    Return value is a list of elements
+    
+    Arguments:
+        - element (lxml._Element or str): This a lxml._Element object
+            or a string with the element id.        
+        - label (str): the label of the element
+    """
+    st='./gbxml:%s' % label
+    return xpath(element,st)
+
+def get_descendents(element,label='*'):
+    """Returns the descendent elements of an element
+    
+    Return value is a list of elements
+    
+    Arguments:
+        - element (lxml._Element): This a lxml._Element object
+        - label (str): the label of the element
+    """
+    st='.//gbxml:%s' % label
+    return xpath(element,st)
+
+def get_element(element,id,label='*'):
+        """Returns an element from the gbXML file
+        """
+        st='//gbxml:%s[@id="%s"]' % (label,id)
+        return xpath(element.getroottree(),st)[0]
+        
+
+# SURFACE FUNCTION
+        
+def get_surface_coordinates(surface_element):
+    """Returns a list of coordinate tuples
+    
+    Arguments:
+        - surface_element (lxml._Element or str): This a lxml._Element object
+            
+    Return value:
+        - coordinates (list): a list where each item is a tuple of (x,y,z) coordinates.
+            i.e. [(x1,y1,z1),(x2,y2,z2),(x3,y3,z3),...]
+            or None
+            
+    """
+    l=[]
+    st='./gbxml:PlanarGeometry/gbxml:PolyLoop/gbxml:CartesianPoint'
+    cartesian_points=xpath(surface_element,st)
+    for cartesian_point in cartesian_points:
+        st='./gbxml:Coordinate'
+        coordinates=xpath(cartesian_point,st)
+        t=(float(coordinates[0].text),
+           float(coordinates[1].text),
+           float(coordinates[2].text))
+        l.append(t)
+    return l
+    
+def get_surface_inner_space(surface_element):
+    """Returns the inner Space element of a Surface, or None
+    """
+    adjacentSpaceIds=get_children(surface_element,label='AdjacentSpaceId')
+    if len(adjacentSpaceIds)>0:
+        adjacentSpaceId=adjacentSpaceIds[0]
+        spaceIdRef=adjacentSpaceId.get('spaceIdRef')
+        return get_element(surface_element,spaceIdRef)
+    
+def get_surface_outer_space(surface_element):
+    """Returns the outer Space element of a Surface, or None
+    """
+    adjacentSpaceIds=get_children(surface_element,label='AdjacentSpaceId')
+    if len(adjacentSpaceIds)>1:
+        adjacentSpaceId=adjacentSpaceIds[1]
+        spaceIdRef=adjacentSpaceId.get('spaceIdRef')
+        return get_element(surface_element,spaceIdRef)
+        
+
+
 class Gbxml():
     "An object that represents a gbXML dataset"
     
