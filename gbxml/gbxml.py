@@ -32,7 +32,7 @@ def get_child(element,id=None,label='*'):
         
         """
         if id is None:
-            return get_children(element,label)
+            return get_children(element,label)[0]
         else:
             st='./gbxml:%s[@id="%s"]' % (label,id)
             return xpath(element,st)[0]
@@ -79,7 +79,50 @@ def get_element(element,id,label='*'):
         """
         st='//gbxml:%s[@id="%s"]' % (label,id)
         return xpath(element.getroottree(),st)[0]
-        
+
+
+# CONSTRUCTION FUNCTIONS
+
+def construction_layers(construction_element):
+    "Returns the layer elements of a construction"
+    layerId_elements=get_children(construction_element,'LayerId')
+    layer_elements=[get_layer(layerId_element,
+                                layerId_element.get('layerIdRef')) 
+                        for layerId_element in layerId_elements]
+    return layer_elements
+
+def construction_materials(construction_element):
+    "Returns the layer elements of a construction"
+    layer_elements=construction_layers(construction_element)
+    material_elements=[]
+    for layer_element in layer_elements:
+        material_elements+=layer_materials(layer_element)
+    return material_elements
+
+
+# LAYER FUNCTIONS
+
+def get_layer(element,id):
+    root=element.getroottree()
+    result=xpath(root,'./gbxml:Layer[@id="%s"]' % id)
+    return result[0]
+
+def layer_materials(layer_element):
+    "Returns the layer elements of a construction"
+    materialId_elements=get_children(layer_element,'MaterialId')
+    material_elements=[get_element(materialId_element,
+                                   materialId_element.get('materialIdRef'),
+                                   'Material') 
+                        for materialId_element in materialId_elements]
+    return material_elements
+    
+# MATERIAL FUNCTIONS    
+
+def get_material(element,id):
+    root=element.getroottree()
+    result=xpath(root,'./gbxml:Material[@id="%s"]' % id)
+    return result[0]
+
 
 # SURFACE FUNCTION
         
