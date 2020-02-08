@@ -10,6 +10,9 @@ class Test_gbxml(unittest.TestCase):
 
 # OBJECT CREATION
     
+    
+    
+    
     def test_gbxml___init__(self):
         g=Gbxml(config.xml,config.xsd)
         b=isinstance(g,Gbxml)

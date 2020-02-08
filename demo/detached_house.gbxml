@@ -1,0 +1,3516 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns0:gbXML xmlns:ns0="http://www.gbxml.org/schema" temperatureUnit="C" lengthUnit="Meters" areaUnit="SquareMeters" volumeUnit="CubicMeters" useSIUnitsForResults="true" version="0.37">
+  <ns0:Campus id="campus-1">
+    <ns0:Name>detached_house</ns0:Name>
+    <ns0:Location>
+      <ns0:CADModelAzimuth>-0.000000</ns0:CADModelAzimuth>
+    </ns0:Location>
+    <ns0:Building id="detached_house" buildingType="Unknown">
+      <ns0:BuildingStorey id="GROUP_1">
+        <ns0:Name>Ground Floor</ns0:Name>
+        <ns0:Level>0.000000</ns0:Level>
+      </ns0:BuildingStorey>
+      <ns0:Space id="DINING_ROOM" conditionType="HeatedAndCooled" buildingStoreyIdRef="GROUP_1" peopleScheduleIdRef="schedule-alwaysOn" lightScheduleIdRef="schedule-alwaysOn" equipmentScheduleIdRef="schedule-alwaysOn" zoneIdRef="Zone-DINING_ROOM">
+        <ns0:Name>DINING_ROOM</ns0:Name>
+        <ns0:Area>13.136900</ns0:Area>
+        <ns0:Volume>32.842250</ns0:Volume>
+        <ns0:AirChangesPerHour>0.5</ns0:AirChangesPerHour>
+        <ns0:PeopleNumber unit="NumberOfPeople">0.2</ns0:PeopleNumber>
+        <ns0:PeopleHeatGain unit="WattPerPerson" heatGainType="Total">90</ns0:PeopleHeatGain>
+        <ns0:LightPowerPerArea unit="WattPerSquareMeter">0.5</ns0:LightPowerPerArea>
+        <ns0:EquipPowerPerArea unit="WattPerSquareMeter">3</ns0:EquipPowerPerArea>
+      </ns0:Space>
+      <ns0:Space id="KITCHEN" conditionType="HeatedAndCooled" buildingStoreyIdRef="GROUP_1" peopleScheduleIdRef="schedule-alwaysOn" lightScheduleIdRef="schedule-alwaysOn" equipmentScheduleIdRef="schedule-alwaysOn" zoneIdRef="Zone-KITCHEN">
+        <ns0:Name>KITCHEN</ns0:Name>
+        <ns0:Area>7.705900</ns0:Area>
+        <ns0:Volume>19.264750</ns0:Volume>
+        <ns0:AirChangesPerHour>0.5</ns0:AirChangesPerHour>
+        <ns0:PeopleNumber unit="NumberOfPeople">0.2</ns0:PeopleNumber>
+        <ns0:PeopleHeatGain unit="WattPerPerson" heatGainType="Total">90</ns0:PeopleHeatGain>
+        <ns0:LightPowerPerArea unit="WattPerSquareMeter">0.5</ns0:LightPowerPerArea>
+        <ns0:EquipPowerPerArea unit="WattPerSquareMeter">3</ns0:EquipPowerPerArea>
+      </ns0:Space>
+      <ns0:Space id="LIVING_ROOM" conditionType="HeatedAndCooled" buildingStoreyIdRef="GROUP_1" peopleScheduleIdRef="schedule-alwaysOn" lightScheduleIdRef="schedule-alwaysOn" equipmentScheduleIdRef="schedule-alwaysOn" zoneIdRef="Zone-LIVING_ROOM">
+        <ns0:Name>LIVING_ROOM</ns0:Name>
+        <ns0:Area>18.846341</ns0:Area>
+        <ns0:Volume>47.115852</ns0:Volume>
+        <ns0:AirChangesPerHour>0.5</ns0:AirChangesPerHour>
+        <ns0:PeopleNumber unit="NumberOfPeople">0.2</ns0:PeopleNumber>
+        <ns0:PeopleHeatGain unit="WattPerPerson" heatGainType="Total">90</ns0:PeopleHeatGain>
+        <ns0:LightPowerPerArea unit="WattPerSquareMeter">0.5</ns0:LightPowerPerArea>
+        <ns0:EquipPowerPerArea unit="WattPerSquareMeter">3</ns0:EquipPowerPerArea>
+      </ns0:Space>
+      <ns0:Space id="HALL" conditionType="HeatedAndCooled" buildingStoreyIdRef="GROUP_1" peopleScheduleIdRef="schedule-alwaysOn" lightScheduleIdRef="schedule-alwaysOn" equipmentScheduleIdRef="schedule-alwaysOn" zoneIdRef="Zone-HALL">
+        <ns0:Name>HALL</ns0:Name>
+        <ns0:Area>10.016940</ns0:Area>
+        <ns0:Volume>25.042350</ns0:Volume>
+        <ns0:AirChangesPerHour>0.5</ns0:AirChangesPerHour>
+        <ns0:PeopleNumber unit="NumberOfPeople">0.2</ns0:PeopleNumber>
+        <ns0:PeopleHeatGain unit="WattPerPerson" heatGainType="Total">90</ns0:PeopleHeatGain>
+        <ns0:LightPowerPerArea unit="WattPerSquareMeter">0.5</ns0:LightPowerPerArea>
+        <ns0:EquipPowerPerArea unit="WattPerSquareMeter">3</ns0:EquipPowerPerArea>
+      </ns0:Space>
+      <ns0:Space id="BATHROOM" conditionType="HeatedAndCooled" buildingStoreyIdRef="GROUP_1" peopleScheduleIdRef="schedule-alwaysOn" lightScheduleIdRef="schedule-alwaysOn" equipmentScheduleIdRef="schedule-alwaysOn" zoneIdRef="Zone-BATHROOM">
+        <ns0:Name>BATHROOM</ns0:Name>
+        <ns0:Area>3.323570</ns0:Area>
+        <ns0:Volume>7.810389</ns0:Volume>
+        <ns0:AirChangesPerHour>0.5</ns0:AirChangesPerHour>
+        <ns0:PeopleNumber unit="NumberOfPeople">0.2</ns0:PeopleNumber>
+        <ns0:PeopleHeatGain unit="WattPerPerson" heatGainType="Total">90</ns0:PeopleHeatGain>
+        <ns0:LightPowerPerArea unit="WattPerSquareMeter">0.5</ns0:LightPowerPerArea>
+        <ns0:EquipPowerPerArea unit="WattPerSquareMeter">3</ns0:EquipPowerPerArea>
+      </ns0:Space>
+      <ns0:Space id="WC" conditionType="HeatedAndCooled" buildingStoreyIdRef="GROUP_1" peopleScheduleIdRef="schedule-alwaysOn" lightScheduleIdRef="schedule-alwaysOn" equipmentScheduleIdRef="schedule-alwaysOn" zoneIdRef="Zone-WC">
+        <ns0:Name>WC</ns0:Name>
+        <ns0:Area>1.229020</ns0:Area>
+        <ns0:Volume>2.888197</ns0:Volume>
+        <ns0:AirChangesPerHour>0.5</ns0:AirChangesPerHour>
+        <ns0:PeopleNumber unit="NumberOfPeople">0.2</ns0:PeopleNumber>
+        <ns0:PeopleHeatGain unit="WattPerPerson" heatGainType="Total">90</ns0:PeopleHeatGain>
+        <ns0:LightPowerPerArea unit="WattPerSquareMeter">0.5</ns0:LightPowerPerArea>
+        <ns0:EquipPowerPerArea unit="WattPerSquareMeter">3</ns0:EquipPowerPerArea>
+      </ns0:Space>
+      <ns0:Space id="BEDROOM2" conditionType="HeatedAndCooled" buildingStoreyIdRef="GROUP_1" peopleScheduleIdRef="schedule-alwaysOn" lightScheduleIdRef="schedule-alwaysOn" equipmentScheduleIdRef="schedule-alwaysOn" zoneIdRef="Zone-BEDROOM2">
+        <ns0:Name>BEDROOM2</ns0:Name>
+        <ns0:Area>11.756900</ns0:Area>
+        <ns0:Volume>27.628715</ns0:Volume>
+        <ns0:AirChangesPerHour>0.5</ns0:AirChangesPerHour>
+        <ns0:PeopleNumber unit="NumberOfPeople">0.2</ns0:PeopleNumber>
+        <ns0:PeopleHeatGain unit="WattPerPerson" heatGainType="Total">90</ns0:PeopleHeatGain>
+        <ns0:LightPowerPerArea unit="WattPerSquareMeter">0.5</ns0:LightPowerPerArea>
+        <ns0:EquipPowerPerArea unit="WattPerSquareMeter">3</ns0:EquipPowerPerArea>
+      </ns0:Space>
+      <ns0:Space id="BEDROOM1" conditionType="HeatedAndCooled" buildingStoreyIdRef="GROUP_1" peopleScheduleIdRef="schedule-alwaysOn" lightScheduleIdRef="schedule-alwaysOn" equipmentScheduleIdRef="schedule-alwaysOn" zoneIdRef="Zone-BEDROOM1">
+        <ns0:Name>BEDROOM1</ns0:Name>
+        <ns0:Area>15.747529</ns0:Area>
+        <ns0:Volume>37.006692</ns0:Volume>
+        <ns0:AirChangesPerHour>0.5</ns0:AirChangesPerHour>
+        <ns0:PeopleNumber unit="NumberOfPeople">0.2</ns0:PeopleNumber>
+        <ns0:PeopleHeatGain unit="WattPerPerson" heatGainType="Total">90</ns0:PeopleHeatGain>
+        <ns0:LightPowerPerArea unit="WattPerSquareMeter">0.5</ns0:LightPowerPerArea>
+        <ns0:EquipPowerPerArea unit="WattPerSquareMeter">3</ns0:EquipPowerPerArea>
+      </ns0:Space>
+      <ns0:Space id="BEDROOM3" conditionType="HeatedAndCooled" buildingStoreyIdRef="GROUP_1" peopleScheduleIdRef="schedule-alwaysOn" lightScheduleIdRef="schedule-alwaysOn" equipmentScheduleIdRef="schedule-alwaysOn" zoneIdRef="Zone-BEDROOM3">
+        <ns0:Name>BEDROOM3</ns0:Name>
+        <ns0:Area>8.982774</ns0:Area>
+        <ns0:Volume>21.109519</ns0:Volume>
+        <ns0:AirChangesPerHour>0.5</ns0:AirChangesPerHour>
+        <ns0:PeopleNumber unit="NumberOfPeople">0.2</ns0:PeopleNumber>
+        <ns0:PeopleHeatGain unit="WattPerPerson" heatGainType="Total">90</ns0:PeopleHeatGain>
+        <ns0:LightPowerPerArea unit="WattPerSquareMeter">0.5</ns0:LightPowerPerArea>
+        <ns0:EquipPowerPerArea unit="WattPerSquareMeter">3</ns0:EquipPowerPerArea>
+      </ns0:Space>
+      <ns0:Space id="LANDING" conditionType="HeatedAndCooled" buildingStoreyIdRef="GROUP_1" peopleScheduleIdRef="schedule-alwaysOn" lightScheduleIdRef="schedule-alwaysOn" equipmentScheduleIdRef="schedule-alwaysOn" zoneIdRef="Zone-LANDING">
+        <ns0:Name>LANDING</ns0:Name>
+        <ns0:Area>7.785979</ns0:Area>
+        <ns0:Volume>18.297049</ns0:Volume>
+        <ns0:AirChangesPerHour>0.5</ns0:AirChangesPerHour>
+        <ns0:PeopleNumber unit="NumberOfPeople">0.2</ns0:PeopleNumber>
+        <ns0:PeopleHeatGain unit="WattPerPerson" heatGainType="Total">90</ns0:PeopleHeatGain>
+        <ns0:LightPowerPerArea unit="WattPerSquareMeter">0.5</ns0:LightPowerPerArea>
+        <ns0:EquipPowerPerArea unit="WattPerSquareMeter">3</ns0:EquipPowerPerArea>
+      </ns0:Space>
+      <ns0:Space id="ROOF" conditionType="Unconditioned" buildingStoreyIdRef="GROUP_1">
+        <ns0:Name>ROOF</ns0:Name>
+        <ns0:Area>68.949941</ns0:Area>
+        <ns0:Volume>68.143813</ns0:Volume>
+        <ns0:AirChangesPerHour>0.5</ns0:AirChangesPerHour>
+      </ns0:Space>
+    </ns0:Building>
+    <ns0:Surface id="surface-1" surfaceType="SlabOnGrade" constructionIdRef="STD_FLO1">
+      <ns0:AdjacentSpaceId spaceIdRef="DINING_ROOM"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>180.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>4.902000</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.189500</ns0:Height>
+        <ns0:Width>3.789500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-2" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="DINING_ROOM"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>2.262500</ns0:Coordinate>
+          <ns0:Coordinate>5.989500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>1.200000</ns0:Height>
+        <ns0:Width>1.150000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-3" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="DINING_ROOM"/>
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM2"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>4.902000</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.189500</ns0:Height>
+        <ns0:Width>3.789500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-4" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="DINING_ROOM"/>
+      <ns0:AdjacentSpaceId spaceIdRef="HALL"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>5.989500</ns0:Coordinate>
+          <ns0:Coordinate>-0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>1.200000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-5" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="DINING_ROOM"/>
+      <ns0:AdjacentSpaceId spaceIdRef="KITCHEN"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>-0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>2.989500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-6" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="DINING_ROOM"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>4.902000</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>3.789500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+      <ns0:Opening id="surface-6-opening-1" windowTypeIdRef="STD_EXTW" openingType="FixedWindow">
+        <ns0:RectangularGeometry>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.980000</ns0:Coordinate>
+            <ns0:Coordinate>0.050000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:Height>2.100000</ns0:Height>
+          <ns0:Width>1.800000</ns0:Width>
+        </ns0:RectangularGeometry>
+        <ns0:PlanarGeometry>
+          <ns0:PolyLoop>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>2.122000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>2.150000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>3.922000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>2.150000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>3.922000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>0.050000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>2.122000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>0.050000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+          </ns0:PolyLoop>
+        </ns0:PlanarGeometry>
+      </ns0:Opening>
+    </ns0:Surface>
+    <ns0:Surface id="surface-7" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="DINING_ROOM"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>90.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>4.902000</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>4.189500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-8" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="DINING_ROOM"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LIVING_ROOM"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>180.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>-0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>3.789500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-9" surfaceType="SlabOnGrade" constructionIdRef="STD_FLO1">
+      <ns0:AdjacentSpaceId spaceIdRef="KITCHEN"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>180.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>5.989500</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.989500</ns0:Height>
+        <ns0:Width>3.289500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-10" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="KITCHEN"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>6.989500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>1.000000</ns0:Height>
+        <ns0:Width>3.289500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-11" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="KITCHEN"/>
+      <ns0:AdjacentSpaceId spaceIdRef="WC"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>1.989500</ns0:Height>
+        <ns0:Width>0.891000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-12" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="KITCHEN"/>
+      <ns0:AdjacentSpaceId spaceIdRef="BATHROOM"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>0.221500</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>1.989500</ns0:Height>
+        <ns0:Width>2.398500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-13" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="KITCHEN"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-2.177000</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>2.989500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>-0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+      <ns0:Opening id="surface-13-opening-1" constructionIdRef="STD_DOOR" openingType="NonSlidingDoor">
+        <ns0:RectangularGeometry>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.890000</ns0:Coordinate>
+            <ns0:Coordinate>0.050000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:Height>2.050000</ns0:Height>
+          <ns0:Width>0.800000</ns0:Width>
+        </ns0:RectangularGeometry>
+        <ns0:PlanarGeometry>
+          <ns0:PolyLoop>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-2.177000</ns0:Coordinate>
+              <ns0:Coordinate>7.289000</ns0:Coordinate>
+              <ns0:Coordinate>2.100000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-2.177000</ns0:Coordinate>
+              <ns0:Coordinate>8.089000</ns0:Coordinate>
+              <ns0:Coordinate>2.100000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-2.177000</ns0:Coordinate>
+              <ns0:Coordinate>8.089000</ns0:Coordinate>
+              <ns0:Coordinate>0.050000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-2.177000</ns0:Coordinate>
+              <ns0:Coordinate>7.289000</ns0:Coordinate>
+              <ns0:Coordinate>0.050000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+          </ns0:PolyLoop>
+        </ns0:PlanarGeometry>
+      </ns0:Opening>
+    </ns0:Surface>
+    <ns0:Surface id="surface-14" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="KITCHEN"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>3.289500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+      <ns0:Opening id="surface-14-opening-1" windowTypeIdRef="STD_EXTW" openingType="FixedWindow">
+        <ns0:RectangularGeometry>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.120500</ns0:Coordinate>
+            <ns0:Coordinate>1.160000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:Height>0.830000</ns0:Height>
+          <ns0:Width>1.580000</ns0:Width>
+        </ns0:RectangularGeometry>
+        <ns0:PlanarGeometry>
+          <ns0:PolyLoop>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-0.588000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>1.990000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>0.992000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>1.990000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>0.992000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>1.160000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-0.588000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>1.160000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+          </ns0:PolyLoop>
+        </ns0:PlanarGeometry>
+      </ns0:Opening>
+    </ns0:Surface>
+    <ns0:Surface id="surface-15" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="KITCHEN"/>
+      <ns0:AdjacentSpaceId spaceIdRef="HALL"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>180.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-2.177000</ns0:Coordinate>
+          <ns0:Coordinate>5.989500</ns0:Coordinate>
+          <ns0:Coordinate>-0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>3.289500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-16" surfaceType="SlabOnGrade" constructionIdRef="STD_FLO1">
+      <ns0:AdjacentSpaceId spaceIdRef="LIVING_ROOM"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>180.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>4.902000</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.789500</ns0:Height>
+        <ns0:Width>4.669500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-17" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="LIVING_ROOM"/>
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM3"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>3.589500</ns0:Height>
+        <ns0:Width>0.880000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-18" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="LIVING_ROOM"/>
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM1"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>4.902000</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.789500</ns0:Height>
+        <ns0:Width>4.669500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-19" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="LIVING_ROOM"/>
+      <ns0:AdjacentSpaceId spaceIdRef="HALL"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>0.232500</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>-0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>3.589500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-20" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="LIVING_ROOM"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>0.232500</ns0:Coordinate>
+          <ns0:Coordinate>1.200000</ns0:Coordinate>
+          <ns0:Coordinate>-0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>1.200000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-21" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="LIVING_ROOM"/>
+      <ns0:AdjacentSpaceId spaceIdRef="HALL"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>0.880000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>-0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>-0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-22" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="LIVING_ROOM"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>90.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>4.902000</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>4.789500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-23" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="LIVING_ROOM"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>180.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>0.232500</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>4.669500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>-0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>-0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+      <ns0:Opening id="surface-23-opening-1" windowTypeIdRef="STD_EXTW" openingType="FixedWindow">
+        <ns0:RectangularGeometry>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.227247</ns0:Coordinate>
+            <ns0:Coordinate>0.890000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:Height>1.070000</ns0:Height>
+          <ns0:Width>2.120000</ns0:Width>
+        </ns0:RectangularGeometry>
+        <ns0:PlanarGeometry>
+          <ns0:PolyLoop>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>1.459747</ns0:Coordinate>
+              <ns0:Coordinate>-0.000000</ns0:Coordinate>
+              <ns0:Coordinate>0.890000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>3.579747</ns0:Coordinate>
+              <ns0:Coordinate>-0.000000</ns0:Coordinate>
+              <ns0:Coordinate>0.890000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>3.579747</ns0:Coordinate>
+              <ns0:Coordinate>-0.000000</ns0:Coordinate>
+              <ns0:Coordinate>1.960000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>1.459747</ns0:Coordinate>
+              <ns0:Coordinate>-0.000000</ns0:Coordinate>
+              <ns0:Coordinate>1.960000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+          </ns0:PolyLoop>
+        </ns0:PlanarGeometry>
+      </ns0:Opening>
+    </ns0:Surface>
+    <ns0:Surface id="surface-24" surfaceType="SlabOnGrade" constructionIdRef="STD_FLO1">
+      <ns0:AdjacentSpaceId spaceIdRef="HALL"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>180.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>1.200000</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.789500</ns0:Height>
+        <ns0:Width>3.289500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-25" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="HALL"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>5.989500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.197000</ns0:Height>
+        <ns0:Width>3.289500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-26" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="HALL"/>
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM3"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>0.232500</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>3.589500</ns0:Height>
+        <ns0:Width>2.409500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-27" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="HALL"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-2.177000</ns0:Coordinate>
+          <ns0:Coordinate>5.989500</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>4.789500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>-0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>-0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-28" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="HALL"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>180.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-2.177000</ns0:Coordinate>
+          <ns0:Coordinate>1.200000</ns0:Coordinate>
+          <ns0:Coordinate>-0.000000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.735000</ns0:Height>
+        <ns0:Width>2.409500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+      <ns0:Opening id="surface-28-opening-1" constructionIdRef="STD_DOOR" openingType="NonSlidingDoor">
+        <ns0:RectangularGeometry>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.950000</ns0:Coordinate>
+            <ns0:Coordinate>0.050000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:Height>2.050000</ns0:Height>
+          <ns0:Width>0.800000</ns0:Width>
+        </ns0:RectangularGeometry>
+        <ns0:PlanarGeometry>
+          <ns0:PolyLoop>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-1.227000</ns0:Coordinate>
+              <ns0:Coordinate>1.200000</ns0:Coordinate>
+              <ns0:Coordinate>0.050000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-0.427000</ns0:Coordinate>
+              <ns0:Coordinate>1.200000</ns0:Coordinate>
+              <ns0:Coordinate>0.050000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-0.427000</ns0:Coordinate>
+              <ns0:Coordinate>1.200000</ns0:Coordinate>
+              <ns0:Coordinate>2.100000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-1.227000</ns0:Coordinate>
+              <ns0:Coordinate>1.200000</ns0:Coordinate>
+              <ns0:Coordinate>2.100000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+          </ns0:PolyLoop>
+        </ns0:PlanarGeometry>
+      </ns0:Opening>
+    </ns0:Surface>
+    <ns0:Surface id="surface-29" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="BATHROOM"/>
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>0.221500</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>1.989500</ns0:Height>
+        <ns0:Width>2.398500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-30" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="BATHROOM"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-2.177000</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>1.989500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-31" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="BATHROOM"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>0.221500</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>2.398500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+      <ns0:Opening id="surface-31-opening-1" windowTypeIdRef="STD_EXTW" openingType="FixedWindow">
+        <ns0:RectangularGeometry>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.068500</ns0:Coordinate>
+            <ns0:Coordinate>1.075000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:Height>0.580000</ns0:Height>
+          <ns0:Width>1.130000</ns0:Width>
+        </ns0:RectangularGeometry>
+        <ns0:PlanarGeometry>
+          <ns0:PolyLoop>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-0.977000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>4.390000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>0.153000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>4.390000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>0.153000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>3.810000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-0.977000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>3.810000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+          </ns0:PolyLoop>
+        </ns0:PlanarGeometry>
+      </ns0:Opening>
+    </ns0:Surface>
+    <ns0:Surface id="surface-32" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="BATHROOM"/>
+      <ns0:AdjacentSpaceId spaceIdRef="WC"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>90.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>0.221500</ns0:Coordinate>
+          <ns0:Coordinate>6.989500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>1.989500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-33" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="BATHROOM"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>180.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-2.177000</ns0:Coordinate>
+          <ns0:Coordinate>6.989500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>2.398500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-34" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="WC"/>
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>1.989500</ns0:Height>
+        <ns0:Width>0.891000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-35" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="WC"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>0.891000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+      <ns0:Opening id="surface-35-opening-1" windowTypeIdRef="STD_EXTW" openingType="FixedWindow">
+        <ns0:RectangularGeometry>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.322500</ns0:Coordinate>
+            <ns0:Coordinate>1.075000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:Height>0.580000</ns0:Height>
+          <ns0:Width>0.500000</ns0:Width>
+        </ns0:RectangularGeometry>
+        <ns0:PlanarGeometry>
+          <ns0:PolyLoop>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>0.290000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>4.390000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>0.790000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>4.390000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>0.790000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>3.810000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>0.290000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>3.810000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+          </ns0:PolyLoop>
+        </ns0:PlanarGeometry>
+      </ns0:Opening>
+    </ns0:Surface>
+    <ns0:Surface id="surface-36" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="WC"/>
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM2"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>90.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>6.989500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>1.989500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-37" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="WC"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>180.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>0.221500</ns0:Coordinate>
+          <ns0:Coordinate>6.989500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>0.891000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.221500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-38" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM2"/>
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>4.902000</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.189500</ns0:Height>
+        <ns0:Width>3.789500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-39" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM2"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>4.902000</ns0:Coordinate>
+          <ns0:Coordinate>8.979000</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>3.789500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+      <ns0:Opening id="surface-39-opening-1" windowTypeIdRef="STD_EXTW" openingType="FixedWindow">
+        <ns0:RectangularGeometry>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.010000</ns0:Coordinate>
+            <ns0:Coordinate>1.025000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:Height>0.830000</ns0:Height>
+          <ns0:Width>1.580000</ns0:Width>
+        </ns0:RectangularGeometry>
+        <ns0:PlanarGeometry>
+          <ns0:PolyLoop>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>2.312000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>4.590000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>3.892000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>4.590000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>3.892000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>3.760000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>2.312000</ns0:Coordinate>
+              <ns0:Coordinate>8.979000</ns0:Coordinate>
+              <ns0:Coordinate>3.760000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+          </ns0:PolyLoop>
+        </ns0:PlanarGeometry>
+      </ns0:Opening>
+    </ns0:Surface>
+    <ns0:Surface id="surface-40" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM2"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>90.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>4.902000</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>4.189500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-41" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM2"/>
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM1"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>180.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>2.262500</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>2.639500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-42" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM2"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>2.262500</ns0:Coordinate>
+          <ns0:Coordinate>5.989500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>1.200000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-43" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM2"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>180.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>5.989500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>1.150000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-44" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM2"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>6.989500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>1.000000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-45" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM1"/>
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>4.902000</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.789500</ns0:Height>
+        <ns0:Width>4.669500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-46" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM1"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>90.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>4.902000</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>4.789500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-47" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM1"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>180.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>0.232500</ns0:Coordinate>
+          <ns0:Coordinate>0.000000</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>4.669500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+      <ns0:Opening id="surface-47-opening-1" windowTypeIdRef="STD_EXTW" openingType="FixedWindow">
+        <ns0:RectangularGeometry>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.374000</ns0:Coordinate>
+            <ns0:Coordinate>1.085000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:Height>0.890000</ns0:Height>
+          <ns0:Width>2.160000</ns0:Width>
+        </ns0:RectangularGeometry>
+        <ns0:PlanarGeometry>
+          <ns0:PolyLoop>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>3.766500</ns0:Coordinate>
+              <ns0:Coordinate>-0.000000</ns0:Coordinate>
+              <ns0:Coordinate>4.710000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>1.606500</ns0:Coordinate>
+              <ns0:Coordinate>-0.000000</ns0:Coordinate>
+              <ns0:Coordinate>4.710000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>1.606500</ns0:Coordinate>
+              <ns0:Coordinate>-0.000000</ns0:Coordinate>
+              <ns0:Coordinate>3.820000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>3.766500</ns0:Coordinate>
+              <ns0:Coordinate>-0.000000</ns0:Coordinate>
+              <ns0:Coordinate>3.820000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+          </ns0:PolyLoop>
+        </ns0:PlanarGeometry>
+      </ns0:Opening>
+    </ns0:Surface>
+    <ns0:Surface id="surface-48" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM1"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>0.232500</ns0:Coordinate>
+          <ns0:Coordinate>1.200000</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>1.200000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-49" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM1"/>
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM3"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>1.200000</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>0.880000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-50" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM1"/>
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM3"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>3.589500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-51" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM1"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>2.262500</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>1.150000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-52" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM3"/>
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>3.589500</ns0:Height>
+        <ns0:Width>3.289500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-53" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM3"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>180.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-2.177000</ns0:Coordinate>
+          <ns0:Coordinate>1.200000</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>2.409500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+      <ns0:Opening id="surface-53-opening-1" windowTypeIdRef="STD_EXTW" openingType="FixedWindow">
+        <ns0:RectangularGeometry>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.690000</ns0:Coordinate>
+            <ns0:Coordinate>1.055000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:Height>0.870000</ns0:Height>
+          <ns0:Width>1.020000</ns0:Width>
+        </ns0:RectangularGeometry>
+        <ns0:PlanarGeometry>
+          <ns0:PolyLoop>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-1.487000</ns0:Coordinate>
+              <ns0:Coordinate>1.200000</ns0:Coordinate>
+              <ns0:Coordinate>3.790000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-0.467000</ns0:Coordinate>
+              <ns0:Coordinate>1.200000</ns0:Coordinate>
+              <ns0:Coordinate>3.790000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-0.467000</ns0:Coordinate>
+              <ns0:Coordinate>1.200000</ns0:Coordinate>
+              <ns0:Coordinate>4.660000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-1.487000</ns0:Coordinate>
+              <ns0:Coordinate>1.200000</ns0:Coordinate>
+              <ns0:Coordinate>4.660000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+          </ns0:PolyLoop>
+        </ns0:PlanarGeometry>
+      </ns0:Opening>
+    </ns0:Surface>
+    <ns0:Surface id="surface-54" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM3"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-2.177000</ns0:Coordinate>
+          <ns0:Coordinate>3.792500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>2.592500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-55" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM3"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-1.297000</ns0:Coordinate>
+          <ns0:Coordinate>3.792500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>0.880000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-56" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM3"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-1.297000</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>0.997000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-57" surfaceType="InteriorWall" constructionIdRef="PART">
+      <ns0:AdjacentSpaceId spaceIdRef="BEDROOM3"/>
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>1.112500</ns0:Coordinate>
+          <ns0:Coordinate>4.789500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>2.409500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-58" surfaceType="Ceiling" constructionIdRef="CEIL">
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>0.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>2.262500</ns0:Coordinate>
+          <ns0:Coordinate>6.989500</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>3.197000</ns0:Height>
+        <ns0:Width>4.439500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>4.789500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.262500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>5.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.112500</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-1.297000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-59" surfaceType="ExteriorWall" constructionIdRef="WALL">
+      <ns0:AdjacentSpaceId spaceIdRef="LANDING"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>90.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-2.177000</ns0:Coordinate>
+          <ns0:Coordinate>6.989500</ns0:Coordinate>
+          <ns0:Coordinate>2.735000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>2.585000</ns0:Height>
+        <ns0:Width>3.197000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>6.989500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>3.792500</ns0:Coordinate>
+            <ns0:Coordinate>2.735000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+      <ns0:Opening id="surface-59-opening-1" windowTypeIdRef="STD_EXTW" openingType="FixedWindow">
+        <ns0:RectangularGeometry>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.388500</ns0:Coordinate>
+            <ns0:Coordinate>0.500000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:Height>0.890000</ns0:Height>
+          <ns0:Width>0.740000</ns0:Width>
+        </ns0:RectangularGeometry>
+        <ns0:PlanarGeometry>
+          <ns0:PolyLoop>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-2.177000</ns0:Coordinate>
+              <ns0:Coordinate>4.861000</ns0:Coordinate>
+              <ns0:Coordinate>4.125000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-2.177000</ns0:Coordinate>
+              <ns0:Coordinate>5.601000</ns0:Coordinate>
+              <ns0:Coordinate>4.125000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-2.177000</ns0:Coordinate>
+              <ns0:Coordinate>5.601000</ns0:Coordinate>
+              <ns0:Coordinate>3.235000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+            <ns0:CartesianPoint>
+              <ns0:Coordinate>-2.177000</ns0:Coordinate>
+              <ns0:Coordinate>4.861000</ns0:Coordinate>
+              <ns0:Coordinate>3.235000</ns0:Coordinate>
+            </ns0:CartesianPoint>
+          </ns0:PolyLoop>
+        </ns0:PlanarGeometry>
+      </ns0:Opening>
+    </ns0:Surface>
+    <ns0:Surface id="surface-60" surfaceType="Roof" constructionIdRef="STD_ROOF">
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>90.000000</ns0:Azimuth>
+        <ns0:Tilt>36.940000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>5.152000</ns0:Coordinate>
+          <ns0:Coordinate>-0.250000</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.741229</ns0:Height>
+        <ns0:Width>9.479000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>5.152000</ns0:Coordinate>
+            <ns0:Coordinate>-0.250000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>5.152000</ns0:Coordinate>
+            <ns0:Coordinate>9.229000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.362500</ns0:Coordinate>
+            <ns0:Coordinate>5.439500</ns0:Coordinate>
+            <ns0:Coordinate>8.169376</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.362500</ns0:Coordinate>
+            <ns0:Coordinate>4.739500</ns0:Coordinate>
+            <ns0:Coordinate>8.169376</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.567250</ns0:Coordinate>
+            <ns0:Coordinate>3.534750</ns0:Coordinate>
+            <ns0:Coordinate>7.263508</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.567250</ns0:Coordinate>
+            <ns0:Coordinate>2.334750</ns0:Coordinate>
+            <ns0:Coordinate>7.263508</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-61" surfaceType="Roof" constructionIdRef="STD_ROOF">
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>180.000000</ns0:Azimuth>
+        <ns0:Tilt>36.940000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-0.017500</ns0:Coordinate>
+          <ns0:Coordinate>-0.250000</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>3.233907</ns0:Height>
+        <ns0:Width>5.169500</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>5.152000</ns0:Coordinate>
+            <ns0:Coordinate>-0.250000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.567250</ns0:Coordinate>
+            <ns0:Coordinate>2.334750</ns0:Coordinate>
+            <ns0:Coordinate>7.263508</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-0.017500</ns0:Coordinate>
+            <ns0:Coordinate>-0.250000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-62" surfaceType="Roof" constructionIdRef="STD_ROOF">
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>36.940000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-0.017500</ns0:Coordinate>
+          <ns0:Coordinate>3.534750</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>3.233907</ns0:Height>
+        <ns0:Width>3.784750</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-0.017500</ns0:Coordinate>
+            <ns0:Coordinate>-0.250000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.567250</ns0:Coordinate>
+            <ns0:Coordinate>2.334750</ns0:Coordinate>
+            <ns0:Coordinate>7.263508</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.567250</ns0:Coordinate>
+            <ns0:Coordinate>3.534750</ns0:Coordinate>
+            <ns0:Coordinate>7.263508</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-0.017500</ns0:Coordinate>
+            <ns0:Coordinate>0.950000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-63" surfaceType="Roof" constructionIdRef="STD_ROOF">
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>36.940000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>5.152000</ns0:Coordinate>
+          <ns0:Coordinate>9.229000</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.741229</ns0:Height>
+        <ns0:Width>7.579000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.362500</ns0:Coordinate>
+            <ns0:Coordinate>5.439500</ns0:Coordinate>
+            <ns0:Coordinate>8.169376</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>5.152000</ns0:Coordinate>
+            <ns0:Coordinate>9.229000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.427000</ns0:Coordinate>
+            <ns0:Coordinate>9.229000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-64" surfaceType="Roof" constructionIdRef="STD_ROOF">
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>180.000000</ns0:Azimuth>
+        <ns0:Tilt>36.940000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-2.427000</ns0:Coordinate>
+          <ns0:Coordinate>0.950000</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.741229</ns0:Height>
+        <ns0:Width>4.994250</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-0.017500</ns0:Coordinate>
+            <ns0:Coordinate>0.950000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>2.567250</ns0:Coordinate>
+            <ns0:Coordinate>3.534750</ns0:Coordinate>
+            <ns0:Coordinate>7.263508</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.362500</ns0:Coordinate>
+            <ns0:Coordinate>4.739500</ns0:Coordinate>
+            <ns0:Coordinate>8.169376</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.427000</ns0:Coordinate>
+            <ns0:Coordinate>0.950000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-65" surfaceType="Roof" constructionIdRef="STD_ROOF">
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>270.000000</ns0:Azimuth>
+        <ns0:Tilt>36.940000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>-2.427000</ns0:Coordinate>
+          <ns0:Coordinate>9.229000</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.741229</ns0:Height>
+        <ns0:Width>8.279000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.362500</ns0:Coordinate>
+            <ns0:Coordinate>4.739500</ns0:Coordinate>
+            <ns0:Coordinate>8.169376</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>1.362500</ns0:Coordinate>
+            <ns0:Coordinate>5.439500</ns0:Coordinate>
+            <ns0:Coordinate>8.169376</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.427000</ns0:Coordinate>
+            <ns0:Coordinate>9.229000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.427000</ns0:Coordinate>
+            <ns0:Coordinate>0.950000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-66" surfaceType="SlabOnGrade" constructionIdRef="STD_FLO1">
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>180.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>5.152000</ns0:Coordinate>
+          <ns0:Coordinate>4.489500</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.739500</ns0:Height>
+        <ns0:Width>7.579000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>5.152000</ns0:Coordinate>
+            <ns0:Coordinate>4.489500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.489500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>8.979000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>4.489500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.427000</ns0:Coordinate>
+            <ns0:Coordinate>4.489500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.427000</ns0:Coordinate>
+            <ns0:Coordinate>9.229000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>5.152000</ns0:Coordinate>
+            <ns0:Coordinate>9.229000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+    <ns0:Surface id="surface-67" surfaceType="SlabOnGrade" constructionIdRef="STD_FLO1">
+      <ns0:AdjacentSpaceId spaceIdRef="ROOF"/>
+      <ns0:RectangularGeometry>
+        <ns0:Azimuth>0.000000</ns0:Azimuth>
+        <ns0:Tilt>180.000000</ns0:Tilt>
+        <ns0:CartesianPoint>
+          <ns0:Coordinate>5.152000</ns0:Coordinate>
+          <ns0:Coordinate>-0.250000</ns0:Coordinate>
+          <ns0:Coordinate>5.320000</ns0:Coordinate>
+        </ns0:CartesianPoint>
+        <ns0:Height>4.739500</ns0:Height>
+        <ns0:Width>7.579000</ns0:Width>
+      </ns0:RectangularGeometry>
+      <ns0:PlanarGeometry>
+        <ns0:PolyLoop>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>5.152000</ns0:Coordinate>
+            <ns0:Coordinate>-0.250000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-0.017500</ns0:Coordinate>
+            <ns0:Coordinate>-0.250000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-0.017500</ns0:Coordinate>
+            <ns0:Coordinate>0.950000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.427000</ns0:Coordinate>
+            <ns0:Coordinate>0.950000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.427000</ns0:Coordinate>
+            <ns0:Coordinate>4.489500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>4.489500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>-2.177000</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>1.200000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>0.232500</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>0.000000</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>4.902000</ns0:Coordinate>
+            <ns0:Coordinate>4.489500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+          <ns0:CartesianPoint>
+            <ns0:Coordinate>5.152000</ns0:Coordinate>
+            <ns0:Coordinate>4.489500</ns0:Coordinate>
+            <ns0:Coordinate>5.320000</ns0:Coordinate>
+          </ns0:CartesianPoint>
+        </ns0:PolyLoop>
+      </ns0:PlanarGeometry>
+    </ns0:Surface>
+  </ns0:Campus>
+  <ns0:Construction id="CEIL">
+    <ns0:Name>EP Internal Ceiling/Floor</ns0:Name>
+    <ns0:U-value unit="WPerSquareMeterK">1.422735</ns0:U-value>
+    <ns0:LayerId layerIdRef="layer-CEIL"/>
+  </ns0:Construction>
+  <ns0:Construction id="PART">
+    <ns0:Name>EP_InternalWall_Brick</ns0:Name>
+    <ns0:U-value unit="WPerSquareMeterK">1.878175</ns0:U-value>
+    <ns0:LayerId layerIdRef="layer-PART"/>
+  </ns0:Construction>
+  <ns0:Construction id="STD_DOOR">
+    <ns0:Name>2013 Door</ns0:Name>
+    <ns0:U-value unit="WPerSquareMeterK">2.165937</ns0:U-value>
+    <ns0:LayerId layerIdRef="layer-STD_DOOR"/>
+  </ns0:Construction>
+  <ns0:Construction id="STD_FLO1">
+    <ns0:Name>2013 Exposed Floor</ns0:Name>
+    <ns0:U-value unit="WPerSquareMeterK">0.222597</ns0:U-value>
+    <ns0:LayerId layerIdRef="layer-STD_FLO1"/>
+  </ns0:Construction>
+  <ns0:Construction id="STD_ROOF">
+    <ns0:Name>2013 Roof</ns0:Name>
+    <ns0:U-value unit="WPerSquareMeterK">0.179794</ns0:U-value>
+    <ns0:LayerId layerIdRef="layer-STD_ROOF"/>
+  </ns0:Construction>
+  <ns0:Construction id="WALL">
+    <ns0:Name>EP_ExternalWall_Cavity</ns0:Name>
+    <ns0:U-value unit="WPerSquareMeterK">1.416645</ns0:U-value>
+    <ns0:LayerId layerIdRef="layer-WALL"/>
+  </ns0:Construction>
+  <ns0:Layer id="layer-CEIL">
+    <ns0:MaterialId materialIdRef="SCP-0.005"/>
+    <ns0:MaterialId materialIdRef="TMF-0.02"/>
+    <ns0:MaterialId materialIdRef="Cavity-AIR-0.2"/>
+    <ns0:MaterialId materialIdRef="GPB-0.01"/>
+  </ns0:Layer>
+  <ns0:Layer id="layer-PART">
+    <ns0:MaterialId materialIdRef="STD_US5-0.016"/>
+    <ns0:MaterialId materialIdRef="BRI-0.105"/>
+    <ns0:MaterialId materialIdRef="STD_US5-0.016"/>
+  </ns0:Layer>
+  <ns0:Layer id="layer-STD_DOOR">
+    <ns0:MaterialId materialIdRef="STDCBM21-0.037"/>
+  </ns0:Layer>
+  <ns0:Layer id="layer-STD_FLO1">
+    <ns0:MaterialId materialIdRef="STD_PH1-0.0982"/>
+    <ns0:MaterialId materialIdRef="STD_CC2-0.1"/>
+    <ns0:MaterialId materialIdRef="Cavity-AIR-0.05"/>
+    <ns0:MaterialId materialIdRef="STD_FBA-0.02"/>
+  </ns0:Layer>
+  <ns0:Layer id="layer-STD_ROOF">
+    <ns0:MaterialId materialIdRef="STD_PHF-0.1544"/>
+    <ns0:MaterialId materialIdRef="STD_MEM-0.0001"/>
+    <ns0:MaterialId materialIdRef="STD_CC1-0.1"/>
+    <ns0:MaterialId materialIdRef="Cavity-AIR-0.05"/>
+    <ns0:MaterialId materialIdRef="STD_US5-0.0125"/>
+  </ns0:Layer>
+  <ns0:Layer id="layer-WALL">
+    <ns0:MaterialId materialIdRef="BRO1-0.105"/>
+    <ns0:MaterialId materialIdRef="Cavity-AIR-0.065"/>
+    <ns0:MaterialId materialIdRef="BRI-0.105"/>
+    <ns0:MaterialId materialIdRef="STD_US5-0.016"/>
+  </ns0:Layer>
+  <ns0:Material id="BRI-0.105">
+    <ns0:Thickness unit="Meters">0.105000</ns0:Thickness>
+    <ns0:Name>EP_Brick_(inner_leaf)</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">0.620000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">1700.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">800.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="BRO1-0.105">
+    <ns0:Thickness unit="Meters">0.105000</ns0:Thickness>
+    <ns0:Name>EP_Brick_(outer_leaf)</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">0.840000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">1700.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">800.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="Cavity-AIR-0.05">
+    <ns0:Thickness unit="Meters">0.050000</ns0:Thickness>
+  </ns0:Material>
+  <ns0:Material id="Cavity-AIR-0.065">
+    <ns0:Thickness unit="Meters">0.065000</ns0:Thickness>
+  </ns0:Material>
+  <ns0:Material id="Cavity-AIR-0.2">
+    <ns0:Thickness unit="Meters">0.200000</ns0:Thickness>
+  </ns0:Material>
+  <ns0:Material id="GPB-0.01">
+    <ns0:Thickness unit="Meters">0.010000</ns0:Thickness>
+    <ns0:Name>GYPSUM PLASTERBOARD</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">0.160000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">950.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">840.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="SCP-0.005">
+    <ns0:Thickness unit="Meters">0.005000</ns0:Thickness>
+    <ns0:Name>SYNTHETIC CARPET</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">0.060000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">160.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">2500.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="STDCBM21-0.037">
+    <ns0:Thickness unit="Meters">0.037000</ns0:Thickness>
+    <ns0:Name>Plywood- 30 mm</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">0.130000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">500.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">1500.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="STD_CC1-0.1">
+    <ns0:Thickness unit="Meters">0.100000</ns0:Thickness>
+    <ns0:Name>Concrete Deck</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">2.000000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">2400.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">1000.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="STD_CC2-0.1">
+    <ns0:Thickness unit="Meters">0.100000</ns0:Thickness>
+    <ns0:Name>Reinforced Concrete</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">2.300000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">2300.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">1000.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="STD_FBA-0.02">
+    <ns0:Thickness unit="Meters">0.020000</ns0:Thickness>
+    <ns0:Name>Chipboard Flooring</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">0.130000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">500.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">1600.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="STD_MEM-0.0001">
+    <ns0:Thickness unit="Meters">0.000100</ns0:Thickness>
+    <ns0:Name>Membrane</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">1.000000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">1100.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">1000.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="STD_PH1-0.0982">
+    <ns0:Thickness unit="Meters">0.098200</ns0:Thickness>
+    <ns0:Name>Insulation</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">0.025000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">700.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">1000.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="STD_PHF-0.1544">
+    <ns0:Thickness unit="Meters">0.154400</ns0:Thickness>
+    <ns0:Name>Insulation</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">0.030000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">40.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">1450.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="STD_US5-0.0125">
+    <ns0:Thickness unit="Meters">0.012500</ns0:Thickness>
+    <ns0:Name>EP_Plaster_(medium_density)</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">0.260000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">800.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">1000.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="STD_US5-0.016">
+    <ns0:Thickness unit="Meters">0.016000</ns0:Thickness>
+    <ns0:Name>EP_Plaster_(medium_density)</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">0.260000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">800.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">1000.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:Material id="TMF-0.02">
+    <ns0:Thickness unit="Meters">0.020000</ns0:Thickness>
+    <ns0:Name>TIMBER FLOORING</ns0:Name>
+    <ns0:Conductivity unit="WPerMeterK">0.140000</ns0:Conductivity>
+    <ns0:Density unit="KgPerCubicM">650.000000</ns0:Density>
+    <ns0:SpecificHeat unit="JPerKgK">1200.000000</ns0:SpecificHeat>
+  </ns0:Material>
+  <ns0:WindowType id="STD_EXTW">
+    <ns0:Name>2013 External Window</ns0:Name>
+    <ns0:U-value unit="WPerSquareMeterK">1.565248</ns0:U-value>
+    <ns0:Glaze id="STD_EXTW-layer-1">
+      <ns0:Name>[STD_EXW] Outer Pane</ns0:Name>
+      <ns0:Thickness unit="Meters">0.006000</ns0:Thickness>
+    </ns0:Glaze>
+    <ns0:Gap id="STD_EXTW-layer-2" gas="Argon">
+      <ns0:Thickness unit="Meters">0.012000</ns0:Thickness>
+    </ns0:Gap>
+    <ns0:Glaze id="STD_EXTW-layer-3">
+      <ns0:Name>[STD_INW] Inner Pane</ns0:Name>
+      <ns0:Thickness unit="Meters">0.006000</ns0:Thickness>
+    </ns0:Glaze>
+  </ns0:WindowType>
+  <ns0:DocumentHistory>
+    <ns0:ProgramInfo id="IESVE">
+      <ns0:CompanyName>Integrated Environmental Solutions Limited.</ns0:CompanyName>
+      <ns0:ProductName>Virtual Environment 2017 Feature Pack 3</ns0:ProductName>
+      <ns0:Version>2017.3.0.0</ns0:Version>
+      <ns0:Platform>Server 2008 R2</ns0:Platform>
+    </ns0:ProgramInfo>
+    <ns0:PersonInfo id="cvskf">
+      <ns0:FirstName>cvskf</ns0:FirstName>
+      <ns0:LastName>cvskf</ns0:LastName>
+    </ns0:PersonInfo>
+    <ns0:CreatedBy personId="cvskf" programId="IESVE" date="2018-03-06T11:33:59"/>
+  </ns0:DocumentHistory>
+  <ns0:Zone id="Zone-DINING_ROOM" heatSchedIdRef="schedule-heating">
+    <ns0:BaseboardHeatingCapacity>1000000</ns0:BaseboardHeatingCapacity>
+    <ns0:BaseboardHeatingType unit="Electric"/>
+  </ns0:Zone>
+  <ns0:Zone id="Zone-KITCHEN" heatSchedIdRef="schedule-heating">
+    <ns0:BaseboardHeatingCapacity>1000000</ns0:BaseboardHeatingCapacity>
+    <ns0:BaseboardHeatingType unit="Electric"/>
+  </ns0:Zone>
+  <ns0:Zone id="Zone-LIVING_ROOM" heatSchedIdRef="schedule-heating">
+    <ns0:BaseboardHeatingCapacity>1000000</ns0:BaseboardHeatingCapacity>
+    <ns0:BaseboardHeatingType unit="Electric"/>
+  </ns0:Zone>
+  <ns0:Zone id="Zone-HALL" heatSchedIdRef="schedule-heating">
+    <ns0:BaseboardHeatingCapacity>1000000</ns0:BaseboardHeatingCapacity>
+    <ns0:BaseboardHeatingType unit="Electric"/>
+  </ns0:Zone>
+  <ns0:Zone id="Zone-BATHROOM" heatSchedIdRef="schedule-heating">
+    <ns0:BaseboardHeatingCapacity>1000000</ns0:BaseboardHeatingCapacity>
+    <ns0:BaseboardHeatingType unit="Electric"/>
+  </ns0:Zone>
+  <ns0:Zone id="Zone-WC" heatSchedIdRef="schedule-heating">
+    <ns0:BaseboardHeatingCapacity>1000000</ns0:BaseboardHeatingCapacity>
+    <ns0:BaseboardHeatingType unit="Electric"/>
+  </ns0:Zone>
+  <ns0:Zone id="Zone-BEDROOM2" heatSchedIdRef="schedule-heating">
+    <ns0:BaseboardHeatingCapacity>1000000</ns0:BaseboardHeatingCapacity>
+    <ns0:BaseboardHeatingType unit="Electric"/>
+  </ns0:Zone>
+  <ns0:Zone id="Zone-BEDROOM1" heatSchedIdRef="schedule-heating">
+    <ns0:BaseboardHeatingCapacity>1000000</ns0:BaseboardHeatingCapacity>
+    <ns0:BaseboardHeatingType unit="Electric"/>
+  </ns0:Zone>
+  <ns0:Zone id="Zone-BEDROOM3" heatSchedIdRef="schedule-heating">
+    <ns0:BaseboardHeatingCapacity>1000000</ns0:BaseboardHeatingCapacity>
+    <ns0:BaseboardHeatingType unit="Electric"/>
+  </ns0:Zone>
+  <ns0:Zone id="Zone-LANDING" heatSchedIdRef="schedule-heating">
+    <ns0:BaseboardHeatingCapacity>1000000</ns0:BaseboardHeatingCapacity>
+    <ns0:BaseboardHeatingType unit="Electric"/>
+  </ns0:Zone>
+  <ns0:Schedule id="schedule-alwaysOn" type="Fraction">
+    <ns0:YearSchedule id="yearSchedule-alwaysOn">
+      <ns0:BeginDate>2001-01-01</ns0:BeginDate>
+      <ns0:EndDate>2001-12-31</ns0:EndDate>
+      <ns0:WeekScheduleId weekScheduleIdRef="weekSchedule-alwaysOn"/>
+    </ns0:YearSchedule>
+  </ns0:Schedule>
+  <ns0:WeekSchedule id="weekSchedule-alwaysOn" scheduleType="Fraction">
+    <ns0:Day dayScheduleIdRef="daySchedule-alwaysOn" dayType="All"/>
+  </ns0:WeekSchedule>
+  <ns0:DaySchedule id="daySchedule-alwaysOn" scheduleType="Fraction">
+    <ns0:ScheduleValue>1</ns0:ScheduleValue>
+  </ns0:DaySchedule>
+  <ns0:Schedule id="schedule-heating" type="Temp">
+    <ns0:YearSchedule id="yearSchedule-heating1">
+      <ns0:BeginDate>2001-01-01</ns0:BeginDate>
+      <ns0:EndDate>2001-04-30</ns0:EndDate>
+      <ns0:WeekScheduleId weekScheduleIdRef="weekSchedule-heatingOn"/>
+    </ns0:YearSchedule>
+    <ns0:YearSchedule id="yearSchedule-heating2">
+      <ns0:BeginDate>2001-05-01</ns0:BeginDate>
+      <ns0:EndDate>2001-09-30</ns0:EndDate>
+      <ns0:WeekScheduleId weekScheduleIdRef="weekSchedule-heatingOff"/>
+    </ns0:YearSchedule>
+    <ns0:YearSchedule id="yearSchedule-heating3">
+      <ns0:BeginDate>2001-10-01</ns0:BeginDate>
+      <ns0:EndDate>2001-12-31</ns0:EndDate>
+      <ns0:WeekScheduleId weekScheduleIdRef="weekSchedule-heatingOn"/>
+    </ns0:YearSchedule>
+  </ns0:Schedule>
+  <ns0:WeekSchedule id="weekSchedule-heatingOn" scheduleType="Temp">
+    <ns0:Day dayScheduleIdRef="daySchedule-heatingOn" dayType="All"/>
+  </ns0:WeekSchedule>
+  <ns0:WeekSchedule id="weekSchedule-heatingOff" scheduleType="Temp">
+    <ns0:Day dayScheduleIdRef="daySchedule-heatingOff" dayType="All"/>
+  </ns0:WeekSchedule>
+  <ns0:DaySchedule id="daySchedule-heatingOn" scheduleType="Temp">
+    <ns0:ScheduleValue>21</ns0:ScheduleValue>
+  </ns0:DaySchedule>
+  <ns0:DaySchedule id="daySchedule-heatingOff" scheduleType="Temp">
+    <ns0:ScheduleValue>0</ns0:ScheduleValue>
+  </ns0:DaySchedule>
+</ns0:gbXML>

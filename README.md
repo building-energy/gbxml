@@ -1,5 +1,178 @@
 # gbxml
-A Python package for working with gbXML files
+A Python package for reading, writing and editing gbXML files
+
+Any problems? [Please raise an Issue on GitHub](https://github.com/building-energy/gbxml/issues)
+
+## To install
+
+```
+pip install gbxml
+```
+
+## Quick demo
+
+The following code reads a gbXML file and prints the ids of all 'Building' nodes:
+
+```
+import Gbxml
+g=Gbxml('input_file.gbxml')
+print(g.node_ids(label='Building'))
+```
+This outputs:
+```python
+['Building01']
+```
+
+## User guide
+
+### Importing the Gbxml class:
+
+```
+from gbxml import Gbxml
+```
+
+### Creating an instance of Gbxml and reading in a gbXML file:
+
+```
+g = Gbxml('detached_house.gbxml')
+```
+
+lxml is used as the parser to read the gbXML file. 
+
+As the gbXML file is read in, three properties are populated:
+
+```
+g._ElementTree # an lxml _ElementTree instance of the gbXML file
+g._ElementTree_gbxsd # an lxml _ElementTree instance of the gbXML schema file
+g.ns # the gbXML namespace as a dictionary {'gbxml':'http://www.gbxml.org/schema'}
+```
+
+### Query Methods
+
+General query methods:
+
+```python
+g.get_ids ( label = None ) # returns the id attributes of the elements
+g.get_xmlstring ( id = None) # returns a string of an xml element
+```
+
+Construction query methods:
+
+```python
+g.get_construction_layers ( id ) # returns the layer ids of a construction
+```
+
+
+
+
+
+get_ids ( label=None )
+
+
+
+
+
+xmlstring
+
+xpath
+
+write
+
+validate
+
+add_element
+
+set_attribute
+
+set_element_id
+
+set_text
+
+remove_element
+
+remove_attribute
+
+remove_text
+
+elements
+
+root
+
+element
+
+label
+
+attributes
+
+text
+
+child_element
+
+descendent_elements
+
+construction_layers
+
+construction_materials
+
+layer_materials
+
+opening_coordinates
+
+surface_azimuth
+
+surface_coordinates
+
+surface_inner_space
+
+surface_outer_space
+
+surface_construction
+
+surface_layers
+
+surface_materials
+
+windowType_materials
+
+add_zone
+
+remove_zone
+
+---
+
+xpath
+
+get_child
+
+get_child_text
+
+get_children
+
+get_descendents
+
+get_element
+
+construction_layers
+
+construction_materials
+
+get_layer
+
+layer_materials
+
+get_material
+
+get_surface_coordinates
+
+get_surface_inner_space
+
+get_surface_outer_space
+
+
+
+
+
+or background and information on gbXML files, see https://www.gbxml.org/index.html
 
 ## Status
 

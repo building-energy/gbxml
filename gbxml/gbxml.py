@@ -1,220 +1,94 @@
 # -*- coding: utf-8 -*-
 
 from lxml import etree
-from .gbxsd import Gbxsd
-#from pkg_resources import resource_filename
 import pkgutil
 from io import BytesIO
 
 ns={'gbxml':'http://www.gbxml.org/schema'}
 
-# OUTPUT
-
-def xpath(element,st_xpath):
-    """Returns the result of an xpath operation on the gbXML file
-    
-    Arguments
-        - st_xpath (str): the xpath string
-        - element (lxml.etree._Element): the element for the xpath operation. The 
-            default is the root element
-    
-    """
-    return element.xpath(st_xpath,namespaces=ns)
-
-# QUERYING
-
-def get_child(element,id=None,label='*'):
-        """Returns the child of an element
-        
-        Arguments:
-            - id (str): the id of the element
-            - label (str): the label of the element
-        
-        """
-        if id is None:
-            return get_children(element,label)[0]
-        else:
-            st='./gbxml:%s[@id="%s"]' % (label,id)
-            return xpath(element,st)[0]
-        
-
-def get_child_text(element,label='*',dtype=None):
-    "Returns the first child text value, or None"
-    children=get_children(element,label)
-    if children: 
-        if dtype is None:
-            return children[0].text
-        else:
-            return dtype(children[0].text)
-    else:
-        return None
-
-def get_children(element,label='*'):
-    """Returns the child elements of an element
-    
-    Return value is a list of elements
-    
-    Arguments:
-        - element (lxml._Element or str): This a lxml._Element object
-            or a string with the element id.        
-        - label (str): the label of the element
-    """
-    st='./gbxml:%s' % label
-    return xpath(element,st)
-
-def get_descendents(element,label='*'):
-    """Returns the descendent elements of an element
-    
-    Return value is a list of elements
-    
-    Arguments:
-        - element (lxml._Element): This a lxml._Element object
-        - label (str): the label of the element
-    """
-    st='.//gbxml:%s' % label
-    return xpath(element,st)
-
-def get_element(element,id,label='*'):
-        """Returns an element from the gbXML file
-        """
-        st='//gbxml:%s[@id="%s"]' % (label,id)
-        return xpath(element.getroottree(),st)[0]
-
-
-# CONSTRUCTION FUNCTIONS
-
-def construction_layers(construction_element):
-    "Returns the layer elements of a construction"
-    layerId_elements=get_children(construction_element,'LayerId')
-    layer_elements=[get_layer(layerId_element,
-                                layerId_element.get('layerIdRef')) 
-                        for layerId_element in layerId_elements]
-    return layer_elements
-
-def construction_materials(construction_element):
-    "Returns the layer elements of a construction"
-    layer_elements=construction_layers(construction_element)
-    material_elements=[]
-    for layer_element in layer_elements:
-        material_elements+=layer_materials(layer_element)
-    return material_elements
-
-
-# LAYER FUNCTIONS
-
-def get_layer(element,id):
-    root=element.getroottree()
-    result=xpath(root,'./gbxml:Layer[@id="%s"]' % id)
-    return result[0]
-
-def layer_materials(layer_element):
-    "Returns the layer elements of a construction"
-    materialId_elements=get_children(layer_element,'MaterialId')
-    material_elements=[get_element(materialId_element,
-                                   materialId_element.get('materialIdRef'),
-                                   'Material') 
-                        for materialId_element in materialId_elements]
-    return material_elements
-    
-# MATERIAL FUNCTIONS    
-
-def get_material(element,id):
-    root=element.getroottree()
-    result=xpath(root,'./gbxml:Material[@id="%s"]' % id)
-    return result[0]
-
-
-# SURFACE FUNCTION
-        
-def get_surface_coordinates(surface_element):
-    """Returns a list of coordinate tuples
-    
-    Arguments:
-        - surface_element (lxml._Element or str): This a lxml._Element object
-            
-    Return value:
-        - coordinates (list): a list where each item is a tuple of (x,y,z) coordinates.
-            i.e. [(x1,y1,z1),(x2,y2,z2),(x3,y3,z3),...]
-            or None
-            
-    """
-    l=[]
-    st='./gbxml:PlanarGeometry/gbxml:PolyLoop/gbxml:CartesianPoint'
-    cartesian_points=xpath(surface_element,st)
-    for cartesian_point in cartesian_points:
-        st='./gbxml:Coordinate'
-        coordinates=xpath(cartesian_point,st)
-        t=(float(coordinates[0].text),
-           float(coordinates[1].text),
-           float(coordinates[2].text))
-        l.append(t)
-    return l
-    
-def get_surface_inner_space(surface_element):
-    """Returns the inner Space element of a Surface, or None
-    """
-    adjacentSpaceIds=get_children(surface_element,label='AdjacentSpaceId')
-    if len(adjacentSpaceIds)>0:
-        adjacentSpaceId=adjacentSpaceIds[0]
-        spaceIdRef=adjacentSpaceId.get('spaceIdRef')
-        return get_element(surface_element,spaceIdRef)
-    
-def get_surface_outer_space(surface_element):
-    """Returns the outer Space element of a Surface, or None
-    """
-    adjacentSpaceIds=get_children(surface_element,label='AdjacentSpaceId')
-    if len(adjacentSpaceIds)>1:
-        adjacentSpaceId=adjacentSpaceIds[1]
-        spaceIdRef=adjacentSpaceId.get('spaceIdRef')
-        return get_element(surface_element,spaceIdRef)
-        
-
-
 class Gbxml():
-    "An object that represents a gbXML dataset"
+    "A class that represents a gbXML file and the gbXML schema"
     
     def __init__(self,
-                 xml_fp=None,
-                 xsd_fp=None):
+                 gbxml_fp=None,
+                 gbxsd_fp=None):
         """Initialises a new Gbxml instance
         
         Arguments:
-            xml_fp (str): filepath to a gbXML file. This is read in as an 
+            gbxml_fp (str): filepath to a gbXML file. This is read in as an 
                 lxml._ElementTree object. If not supplied then a 
                 new lxml._ElementTree object with only a root element is created.
                 
-            xsd_fp (str): filepath to a gbXML schema file. If not supplied 
+            gbxsd_fp (str): filepath to a gbXML schema file. If not supplied 
                 then a default gbXMl schema file is used.
                 
         """
-        if xml_fp: 
-            self._ElementTree=self._read(xml_fp)
+        if gbxml_fp: 
+            self._ElementTree=etree.parse(gbxml_fp)
         else:
             st = pkgutil.get_data(__package__, 'blank.xml')
-            self._ElementTree=self._read(BytesIO(st))
+            self._ElementTree=etree.parse(BytesIO(st))
             
-        self.ns={'gbxml':'http://www.gbxml.org/schema'}
-        
-        if xsd_fp:
-            self.gbxsd=Gbxsd(xsd_fp)
+        if gbxsd_fp:
+            #self.gbxsd=Gbxsd(xsd_fp) - old
+            self._ElementTree_gbxsd=etree.parse(gbxml_fp)
         else:
             st = pkgutil.get_data(__package__, 'GreenBuildingXML_Ver6.01.xsd')
-            self.gbxsd=Gbxsd(BytesIO(st))
+            self._ElementTree_gbxsd=etree.parse(BytesIO(st))
+            #self.gbxsd=Gbxsd(BytesIO(st)) - old
+        
+        self.ns={'gbxml':'http://www.gbxml.org/schema'}
         
     
-    def _read(self,fp):
-        """Reads a xml file and returns an etree object
+    def get_ids(self, label=None):
+        """Returns the id attributes of elements
         
-        Arguments:
-            fp (str): the filepath or a file-like object
+        :param label: an element label to filter on
+        :type label: str, optional
         """
-        return etree.parse(fp)
-
+        
+        if label is None: label='*'
+        st='//gbxml:%s/@id' % label
+        return self._ElementTree.getroot().xpath(st,namespaces=self.ns)
+    
+    
+    def get_xmlstring(self,id=None):
+        """Returns a string of an xml element
+        
+        :param id: an element id to filter on
+        :type id: str, optional
+        """
+        element=self._ElementTree.getroot()
+        if not id is None: 
+            st='//gbxml:*[@id="%s"]' % id
+            element=element.xpath(st,namespaces=self.ns)[0]
+            
+            
+        return etree.tostring(element,pretty_print=True).decode()
+    
+    
+    # constructions
+    
+    def get_construction_layers(self,id):
+        "Returns the layer elements of a construction"
+                  
+        # get element from id
+        st='//gbxml:Construction[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get layer ids
+        st='./gbxml:LayerId/@layerIdRef'
+        return element.xpath(st,namespaces=self.ns)
+            
+            
+    
+    
+    
     
 # OUTPUT
     
     
-    def xmlstring(self,element=None):
+    def __xmlstring(self,element=None):
         """Returns a string of an xml element
         
         Arguments:
@@ -826,7 +700,167 @@ class Gbxml():
     
     
     
+# OUTPUT
+
+def xpath(element,st_xpath):
+    """Returns the result of an xpath operation on the gbXML file
     
+    Arguments
+        - st_xpath (str): the xpath string
+        - element (lxml.etree._Element): the element for the xpath operation. The 
+            default is the root element
+    
+    """
+    return element.xpath(st_xpath,namespaces=ns)
+
+# QUERYING
+
+def get_child(element,id=None,label='*'):
+        """Returns the child of an element
+        
+        Arguments:
+            - id (str): the id of the element
+            - label (str): the label of the element
+        
+        """
+        if id is None:
+            return get_children(element,label)[0]
+        else:
+            st='./gbxml:%s[@id="%s"]' % (label,id)
+            return xpath(element,st)[0]
+        
+
+def get_child_text(element,label='*',dtype=None):
+    "Returns the first child text value, or None"
+    children=get_children(element,label)
+    if children: 
+        if dtype is None:
+            return children[0].text
+        else:
+            return dtype(children[0].text)
+    else:
+        return None
+
+def get_children(element,label='*'):
+    """Returns the child elements of an element
+    
+    Return value is a list of elements
+    
+    Arguments:
+        - element (lxml._Element or str): This a lxml._Element object
+            or a string with the element id.        
+        - label (str): the label of the element
+    """
+    st='./gbxml:%s' % label
+    return xpath(element,st)
+
+def get_descendents(element,label='*'):
+    """Returns the descendent elements of an element
+    
+    Return value is a list of elements
+    
+    Arguments:
+        - element (lxml._Element): This a lxml._Element object
+        - label (str): the label of the element
+    """
+    st='.//gbxml:%s' % label
+    return xpath(element,st)
+
+def get_element(element,id,label='*'):
+        """Returns an element from the gbXML file
+        """
+        st='//gbxml:%s[@id="%s"]' % (label,id)
+        return xpath(element.getroottree(),st)[0]
+
+
+# CONSTRUCTION FUNCTIONS
+
+def construction_layers(construction_element):
+    "Returns the layer elements of a construction"
+    layerId_elements=get_children(construction_element,'LayerId')
+    layer_elements=[get_layer(layerId_element,
+                                layerId_element.get('layerIdRef')) 
+                        for layerId_element in layerId_elements]
+    return layer_elements
+
+def construction_materials(construction_element):
+    "Returns the layer elements of a construction"
+    layer_elements=construction_layers(construction_element)
+    material_elements=[]
+    for layer_element in layer_elements:
+        material_elements+=layer_materials(layer_element)
+    return material_elements
+
+
+# LAYER FUNCTIONS
+
+def get_layer(element,id):
+    root=element.getroottree()
+    result=xpath(root,'./gbxml:Layer[@id="%s"]' % id)
+    return result[0]
+
+def layer_materials(layer_element):
+    "Returns the layer elements of a construction"
+    materialId_elements=get_children(layer_element,'MaterialId')
+    material_elements=[get_element(materialId_element,
+                                   materialId_element.get('materialIdRef'),
+                                   'Material') 
+                        for materialId_element in materialId_elements]
+    return material_elements
+    
+# MATERIAL FUNCTIONS    
+
+def get_material(element,id):
+    root=element.getroottree()
+    result=xpath(root,'./gbxml:Material[@id="%s"]' % id)
+    return result[0]
+
+
+# SURFACE FUNCTION
+        
+def get_surface_coordinates(surface_element):
+    """Returns a list of coordinate tuples
+    
+    Arguments:
+        - surface_element (lxml._Element or str): This a lxml._Element object
+            
+    Return value:
+        - coordinates (list): a list where each item is a tuple of (x,y,z) coordinates.
+            i.e. [(x1,y1,z1),(x2,y2,z2),(x3,y3,z3),...]
+            or None
+            
+    """
+    l=[]
+    st='./gbxml:PlanarGeometry/gbxml:PolyLoop/gbxml:CartesianPoint'
+    cartesian_points=xpath(surface_element,st)
+    for cartesian_point in cartesian_points:
+        st='./gbxml:Coordinate'
+        coordinates=xpath(cartesian_point,st)
+        t=(float(coordinates[0].text),
+           float(coordinates[1].text),
+           float(coordinates[2].text))
+        l.append(t)
+    return l
+    
+def get_surface_inner_space(surface_element):
+    """Returns the inner Space element of a Surface, or None
+    """
+    adjacentSpaceIds=get_children(surface_element,label='AdjacentSpaceId')
+    if len(adjacentSpaceIds)>0:
+        adjacentSpaceId=adjacentSpaceIds[0]
+        spaceIdRef=adjacentSpaceId.get('spaceIdRef')
+        return get_element(surface_element,spaceIdRef)
+    
+def get_surface_outer_space(surface_element):
+    """Returns the outer Space element of a Surface, or None
+    """
+    adjacentSpaceIds=get_children(surface_element,label='AdjacentSpaceId')
+    if len(adjacentSpaceIds)>1:
+        adjacentSpaceId=adjacentSpaceIds[1]
+        spaceIdRef=adjacentSpaceId.get('spaceIdRef')
+        return get_element(surface_element,spaceIdRef)
+        
+
     
     
     
