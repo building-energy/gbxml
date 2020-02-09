@@ -53,14 +53,64 @@ General query methods:
 
 ```python
 g.get_ids ( label = None ) # returns the id attributes of the elements
-g.get_xmlstring ( id = None) # returns a string of an xml element
+g.get_xmlstring ( id = None ) # returns a string of an element
+g.get_attributes ( id ) # returns the attributes of an element
+g.get_child_tags ( id ) # returns the child tags of an element
+g.get_child_tag_text ( id , child_tag ) # returns the text of child elements
+```
+
+Campus query methods:
+
+```python
+g.get_campus_location_child_tags ( id ) # returns the location child tags of a campus
+g.get_campus_location_child_tag_text ( id , child_tag ) # returns the text of location child elements of a campus
 ```
 
 Construction query methods:
 
 ```python
-g.get_construction_layers ( id ) # returns the layer ids of a construction
+g.get_construction_layer_ids ( id ) # returns the layer ids of a construction
+g.get_construction_material_ids ( id ) # returns the material ids of a construction
 ```
+
+Layer query methods:
+
+```python
+g.get_layer_material_ids ( id ) # returns the material ids of a layer
+```
+
+Surface query methods:
+
+```python
+g.get_surface_opening_ids ( id )
+g.get_surface_coordinates ( id )
+g.get_surface_azimuth ( id )
+g.get_surface_tilt ( id )
+g.get_surface_area ( id )
+g.get_surface_construction_id ( id )
+g.get_surface_inner_space_id ( id )
+g.get_surface_outer_space_id ( id )
+```
+
+Opening query methods:
+
+```python
+g.get_opening_coordinates ( id )
+g.get_opening_area ( id )
+g.get_opening_surface_id ( id )
+g.get_opening_construction_id ( id )
+g.get_opening_window_type_id ( id )
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
