@@ -13,10 +13,10 @@ pip install gbxml
 
 The following code reads a gbXML file and prints the ids of all 'Building' nodes:
 
-```
+```python
 from gbxml import Gbxml
-g=Gbxml('input_file.gbxml')
-print(g.node_ids(tag='Building'))
+g = Gbxml( 'detached_house.gbxml' )
+print( g.get_ids( tag='Building' ) )
 ```
 This outputs:
 ```python
@@ -27,14 +27,14 @@ This outputs:
 
 ### Importing the Gbxml class:
 
-```
+```python
 from gbxml import Gbxml
 ```
 
 ### Creating an instance of Gbxml and reading in a gbXML file:
 
-```
-g = Gbxml('detached_house.gbxml')
+```python
+g = Gbxml( 'detached_house.gbxml' )
 ```
 
 lxml is used as the parser to read the gbXML file. 
@@ -52,7 +52,7 @@ g.ns # the gbXML namespace as a dictionary {'gbxml':'http://www.gbxml.org/schema
 General query methods:
 
 ```python
-g.get_ids ( label = None ) # returns the id attributes of the elements
+g.get_ids ( tag = None ) # returns the id attributes of the elements
 g.get_xmlstring ( id = None ) # returns a string of an element
 g.get_attributes ( id ) # returns the attributes of an element
 g.get_child_tags ( id ) # returns the child tags of an element
@@ -83,21 +83,21 @@ g.get_layer_material_ids ( id ) # returns the material ids of a layer
 Surface query methods:
 
 ```python
-g.get_surface_inner_space_id ( id )
-g.get_surface_outer_space_id ( id )
-g.get_surface_azimuth ( id )
-g.get_surface_tilt ( id )
-g.get_surface_coordinates ( id )
-g.get_surface_area ( id )
-g.get_surface_opening_ids ( id )
+g.get_surface_inner_space_id ( id ) # returns the inner space id of a surface
+g.get_surface_outer_space_id ( id ) # returns the outer space id of a surface
+g.get_surface_azimuth ( id ) # returns the azimuth angle of a surface
+g.get_surface_tilt ( id ) # returns the tilt angle of a surface
+g.get_surface_coordinates ( id ) # returns the coordinates of the vertices of a surface
+g.get_surface_area ( id ) # returns the area of a surface
+g.get_surface_opening_ids ( id ) # returns the ids of the openings in a surface
 ```
 
 Opening query methods:
 
 ```python
-g.get_opening_surface_id ( id )
-g.get_opening_coordinates ( id )
-g.get_opening_area ( id )
+g.get_opening_surface_id ( id ) # returns the id of a parent surface of an opening
+g.get_opening_coordinates ( id ) # returns the coordinates of the vertices of an opening
+g.get_opening_area ( id ) # returns the area of an opening
 ```
 
 
