@@ -14,9 +14,9 @@ pip install gbxml
 The following code reads a gbXML file and prints the ids of all 'Building' nodes:
 
 ```
-import Gbxml
+from gbxml import Gbxml
 g=Gbxml('input_file.gbxml')
-print(g.node_ids(label='Building'))
+print(g.node_ids(tag='Building'))
 ```
 This outputs:
 ```python
@@ -41,7 +41,7 @@ lxml is used as the parser to read the gbXML file.
 
 As the gbXML file is read in, three properties are populated:
 
-```
+```python
 g._ElementTree # an lxml _ElementTree instance of the gbXML file
 g._ElementTree_gbxsd # an lxml _ElementTree instance of the gbXML schema file
 g.ns # the gbXML namespace as a dictionary {'gbxml':'http://www.gbxml.org/schema'}
