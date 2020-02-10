@@ -57,6 +57,7 @@ g.get_xmlstring ( id = None ) # returns a string of an element
 g.get_attributes ( id ) # returns the attributes of an element
 g.get_child_tags ( id ) # returns the child tags of an element
 g.get_child_tag_text ( id , child_tag ) # returns the text of child elements
+g.get_child_tag_attributes ( id , child_tag ) # returns the attributes of child elements TO DO
 ```
 
 Campus query methods:
@@ -82,24 +83,21 @@ g.get_layer_material_ids ( id ) # returns the material ids of a layer
 Surface query methods:
 
 ```python
-g.get_surface_opening_ids ( id )
-g.get_surface_coordinates ( id )
-g.get_surface_azimuth ( id )
-g.get_surface_tilt ( id )
-g.get_surface_area ( id )
-g.get_surface_construction_id ( id )
 g.get_surface_inner_space_id ( id )
 g.get_surface_outer_space_id ( id )
+g.get_surface_azimuth ( id )
+g.get_surface_tilt ( id )
+g.get_surface_coordinates ( id )
+g.get_surface_area ( id )
+g.get_surface_opening_ids ( id )
 ```
 
 Opening query methods:
 
 ```python
+g.get_opening_surface_id ( id )
 g.get_opening_coordinates ( id )
 g.get_opening_area ( id )
-g.get_opening_surface_id ( id )
-g.get_opening_construction_id ( id )
-g.get_opening_window_type_id ( id )
 ```
 
 

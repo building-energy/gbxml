@@ -171,6 +171,92 @@ class Test_gbxml2(unittest.TestCase):
         self.assertEqual(result,answer)
         
     
+    
+# surface query methods
+        
+    def test_get_surface_inner_space_id(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_surface_inner_space_id(id='surface-6')
+        #print(result)
+        answer='DINING_ROOM'
+        self.assertEqual(result,answer)
+        
+        
+    def test_get_surface_outer_space_id(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_surface_outer_space_id(id='surface-5')
+        #print(result)
+        answer='KITCHEN'
+        self.assertEqual(result,answer)
+        
+        result=g.get_surface_outer_space_id(id='surface-6')
+        #print(result)
+        answer=None
+        self.assertEqual(result,answer)
+        
+        
+    def test_get_surface_azimuth(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_surface_azimuth(id='surface-6')
+        #print(result)
+        answer=0
+        self.assertEqual(result,answer)
+        
+        
+    def test_get_surface_tilt(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_surface_tilt(id='surface-6')
+        #print(result)
+        answer=90
+        self.assertEqual(result,answer)
+        
+        
+    def test_get_surface_coordinates(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_surface_coordinates(id='surface-6')
+        #print(result)
+        answer=[(1.1125, 8.979, 2.735), 
+                (4.902, 8.979, 2.735), 
+                (4.902, 8.979, 0.0), 
+                (1.1125, 8.979, 0.0)]
+        self.assertEqual(result,answer)
+        
+        
+    def test_get_surface_area(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_surface_area(id='surface-6')
+        #print(result)
+        answer=10.3642825
+        self.assertEqual(result,answer)
+        
+        
+    def test_get_surface_opening_ids(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_surface_opening_ids(id='surface-6')
+        #print(result)
+        answer=['surface-6-opening-1']
+        self.assertEqual(result,answer)
+    
+    
+    
+    
+    
+    
+    
 if __name__=='__main__':
     
     o=unittest.main(Test_gbxml2())    

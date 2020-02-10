@@ -4,6 +4,7 @@ from lxml import etree
 import pkgutil
 from io import BytesIO
 from . import xml_functions, construction_functions, layer_functions
+from . import surface_functions
 
 
 class Gbxml():
@@ -178,7 +179,7 @@ class Gbxml():
         :type id: str
         
         :return: a list of layer ids
-        :rtyle: list
+        :rtype: list
         
         """
                   
@@ -197,7 +198,7 @@ class Gbxml():
         :type id: str
         
         :return: a list of material ids
-        :rtyle: list
+        :rtype: list
         
         """
         
@@ -218,7 +219,7 @@ class Gbxml():
         :type id: str
         
         :return: a list of material ids
-        :rtyle: list
+        :rtype: list
         
         """
                   
@@ -233,6 +234,137 @@ class Gbxml():
     
     # surface query methods
     
+    def get_surface_inner_space_id(self,id):
+        """Returns the inner space id of a surface
+        
+        :param id: a Surface element id
+        :type id: str
+        
+        :return: the inner Space id
+        :rtype: str or None
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Surface[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get inner space id
+        return surface_functions.get_inner_space_id(element)
+    
+    
+    def get_surface_outer_space_id(self,id):
+        """Returns the outer space id of a surface
+        
+        :param id: a Surface element id
+        :type id: str
+        
+        :return: the outer Space id
+        :rtype: str or None
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Surface[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get outer space id
+        return surface_functions.get_outer_space_id(element)
+    
+    
+    def get_surface_azimuth(self,id):
+        """Returns the azimuth of a surface
+        
+        :param id: a Surface element id
+        :type id: str
+        
+        :return: the azimuth value
+        :rtype: float or None
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Surface[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get azimuth
+        return surface_functions.get_azimuth(element)
+    
+    
+    def get_surface_tilt(self,id):
+        """Returns the tilt of a surface
+        
+        :param id: a Surface element id
+        :type id: str
+        
+        :return: the tilt value
+        :rtype: float or None
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Surface[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get tilt
+        return surface_functions.get_tilt(element)
+    
+    
+    def get_surface_coordinates(self,id):
+        """Returns the coordinates of a surface
+        
+        :param id: a Surface element id
+        :type id: str
+        
+        :return: a list of coordinate tuples (x,y,z)
+        :rtype: list (of tuples)
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Surface[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get coordinates
+        return surface_functions.get_coordinates(element)
+    
+    
+    def get_surface_area(self,id):
+        """Returns the area of a surface
+        
+        :param id: a Surface element id
+        :type id: str
+        
+        :return: the area value
+        :rtype: float or None
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Surface[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get area
+        return surface_functions.get_area(element)
+    
+    
+    def get_surface_opening_ids(self,id):
+        """Returns the opening ids of a surface
+        
+        :param id: a Surface element id
+        :type id: str
+        
+        :return: a list of Opening ids
+        :rtype: list
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Surface[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get opening ids
+        return surface_functions.get_opening_ids(element)
     
     
     # opening query methods
