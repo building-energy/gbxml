@@ -113,6 +113,36 @@ class Test_gbxml2(unittest.TestCase):
         answer=['13.136900']
         self.assertEqual(result,answer)
         
+        
+    def test_get_child_tag_attributes(self):
+        
+        g=Gbxml('detached_house.gbxml')
+        
+        result=g.get_child_tag_attributes(id='DINING_ROOM',child_tag='PeopleHeatGain')
+        #print(result)
+        answer=[{'unit': 'WattPerPerson', 'heatGainType': 'Total'}]
+        self.assertEqual(result,answer)
+        
+        
+    def test_get_children_list(self):
+        
+        g=Gbxml('detached_house.gbxml')
+        
+        result=g.get_children_list(id='DINING_ROOM')
+        #print(result)
+        answer=[{'tag': 'Name', 'text': 'DINING_ROOM', 'attributes': {}}, 
+                {'tag': 'Area', 'text': '13.136900', 'attributes': {}}, 
+                {'tag': 'Volume', 'text': '32.842250', 'attributes': {}}, 
+                {'tag': 'AirChangesPerHour', 'text': '0.5', 'attributes': {}}, 
+                {'tag': 'PeopleNumber', 'text': '0.2', 'attributes': {'unit': 'NumberOfPeople'}}, 
+                {'tag': 'PeopleHeatGain', 'text': '90', 'attributes': {'unit': 'WattPerPerson', 'heatGainType': 'Total'}}, 
+                {'tag': 'LightPowerPerArea', 'text': '0.5', 'attributes': {'unit': 'WattPerSquareMeter'}}, 
+                {'tag': 'EquipPowerPerArea', 'text': '3', 'attributes': {'unit': 'WattPerSquareMeter'}}]
+        self.assertEqual(result,answer)
+        
+        
+        
+        
 # campus tag querys
         
     def test_get_campus_location_tags(self):
@@ -135,6 +165,58 @@ class Test_gbxml2(unittest.TestCase):
         answer=['-0.000000']
         self.assertEqual(result,answer)
         
+        
+# building query methods
+        
+    def test_get_building_space_ids(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_building_space_ids(id="detached_house")
+        #print(result)
+        answer=['DINING_ROOM', 'KITCHEN', 'LIVING_ROOM', 'HALL', 
+                'BATHROOM', 'WC', 'BEDROOM2', 'BEDROOM1', 'BEDROOM3', 
+                'LANDING', 'ROOF']
+        self.assertEqual(result,answer)
+        
+        
+    def test_get_building_surface_ids(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_building_surface_ids(id="detached_house")
+        #print(result)
+        answer=['surface-8', 'surface-20', 'surface-14', 'surface-38', 
+                'surface-47', 'surface-37', 'surface-46', 'surface-44', 
+                'surface-60', 'surface-63', 'surface-24', 'surface-4', 
+                'surface-19', 'surface-21', 'surface-32', 'surface-58', 
+                'surface-31', 'surface-48', 'surface-16', 'surface-51', 
+                'surface-53', 'surface-30', 'surface-12', 'surface-2', 
+                'surface-39', 'surface-54', 'surface-57', 'surface-7', 
+                'surface-52', 'surface-50', 'surface-55', 'surface-65', 
+                'surface-61', 'surface-40', 'surface-43', 'surface-35', 
+                'surface-9', 'surface-15', 'surface-13', 'surface-41', 
+                'surface-33', 'surface-66', 'surface-25', 'surface-42', 
+                'surface-59', 'surface-23', 'surface-29', 'surface-56', 
+                'surface-1', 'surface-10', 'surface-26', 'surface-64', 
+                'surface-67', 'surface-45', 'surface-5', 'surface-22', 
+                'surface-17', 'surface-34', 'surface-6', 'surface-11', 
+                'surface-49', 'surface-28', 'surface-62', 'surface-36', 
+                'surface-27', 'surface-18', 'surface-3']
+        self.assertEqual(result,answer)
+        
+        
+# space query methods
+        
+    def test_get_space_surface_ids(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_space_surface_ids(id="DINING_ROOM")
+        #print(result)
+        answer=['surface-1', 'surface-8', 'surface-4', 'surface-5', 'surface-6', 'surface-2', 'surface-7', 'surface-3']
+        self.assertEqual(result,answer)
+    
         
 # construction query methods
     
@@ -252,9 +334,48 @@ class Test_gbxml2(unittest.TestCase):
         self.assertEqual(result,answer)
     
     
+# opening query methods
+    
+    def test_get_opening_surface_id(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_opening_surface_id(id='surface-6-opening-1')
+        #print(result)
+        answer='surface-6'
+        self.assertEqual(result,answer)
+        
+        
+    def test_get_opening_coordinates(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_opening_coordinates(id='surface-6-opening-1')
+        #print(result)
+        answer=[(2.122, 8.979, 2.15), (3.922, 8.979, 2.15), (3.922, 8.979, 0.05), (2.122, 8.979, 0.05)]
+        self.assertEqual(result,answer)
+        
+        
+    def test_get_opening_area(self):
+        
+        g=Gbxml('detached_house.gbxml')
+    
+        result=g.get_opening_area(id='surface-6-opening-1')
+        #print(result)
+        answer=3.7800000000000007
+        self.assertEqual(result,answer)
     
     
+# zone query methods
+        
+    def test_get_zone_space_ids(self):
+        
+        g=Gbxml('detached_house.gbxml')
     
+        result=g.get_zone_space_ids(id='Zone-DINING_ROOM')
+        #print(result)
+        answer=['DINING_ROOM']
+        self.assertEqual(result,answer)
     
     
 if __name__=='__main__':

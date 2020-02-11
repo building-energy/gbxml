@@ -16,7 +16,8 @@ The following code reads a gbXML file and prints the ids of all 'Building' nodes
 ```python
 from gbxml import Gbxml
 g = Gbxml( 'detached_house.gbxml' )
-print( g.get_ids( tag='Building' ) )
+building_ids = g.get_ids( tag = 'Building' ) 
+print( building_ids )
 ```
 This outputs:
 ```python
@@ -57,7 +58,8 @@ g.get_xmlstring ( id = None ) # returns a string of an element
 g.get_attributes ( id ) # returns the attributes of an element
 g.get_child_tags ( id ) # returns the child tags of an element
 g.get_child_tag_text ( id , child_tag ) # returns the text of child elements
-g.get_child_tag_attributes ( id , child_tag ) # returns the attributes of child elements TO DO
+g.get_child_tag_attributes ( id , child_tag ) # returns the attributes of child elements
+g.get_children_list ( id ) # returns a list of dicts representing each child element
 ```
 
 Campus query methods:
@@ -65,6 +67,19 @@ Campus query methods:
 ```python
 g.get_campus_location_child_tags ( id ) # returns the location child tags of a campus
 g.get_campus_location_child_tag_text ( id , child_tag ) # returns the text of location child elements of a campus
+```
+
+Building query methods:
+
+```python
+g.get_building_space_ids ( id ) # returns the ids of spaces in a building
+g.get_building_surface_ids (id ) # returns the ids of surfaces in a building
+```
+
+Space query methods:
+
+```python
+g.get_space_surface_ids ( id ) # returns the ids of surfaces adjacent to a space
 ```
 
 Construction query methods:
@@ -98,6 +113,12 @@ Opening query methods:
 g.get_opening_surface_id ( id ) # returns the id of a parent surface of an opening
 g.get_opening_coordinates ( id ) # returns the coordinates of the vertices of an opening
 g.get_opening_area ( id ) # returns the area of an opening
+```
+
+Zone query methods:
+
+```python
+g.get_zone_space_ids ( id ) # return the space ids of a zone
 ```
 
 

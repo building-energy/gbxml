@@ -4,7 +4,8 @@ from lxml import etree
 import pkgutil
 from io import BytesIO
 from . import xml_functions, construction_functions, layer_functions
-from . import surface_functions
+from . import surface_functions, space_functions, building_functions
+from . import opening_functions, zone_functions
 
 
 class Gbxml():
@@ -55,8 +56,9 @@ class Gbxml():
         """
         
         if tag is None: tag='*'
-        st='//gbxml:%s/@id' % tag
-        return self._ElementTree.getroot().xpath(st,namespaces=self.ns)
+        element=self._ElementTree.getroot()
+        return xml_functions.get_ids(element,tag)
+        
     
     
     def get_xmlstring(self,id=None):
@@ -131,6 +133,42 @@ class Gbxml():
         return xml_functions.get_child_tag_text(element,child_tag)
     
     
+    def get_child_tag_attributes(self,id,child_tag):
+        """Returns the attributes of child elements
+        
+        :param id: an element id
+        :type id: str
+        :param child_tag: a tag of a child element
+        :type child_tag: str
+        
+        :return: a list of the attributes of each child element with the child_tag tag
+        :rtype: list        
+        
+        """
+        
+        st='//gbxml:*[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        return xml_functions.get_child_tag_attributes(element,child_tag)
+    
+    
+    def get_children_list(self,id):
+        """Returns a list of dicts representing each child element
+        
+        :param id: an element id
+        :type id: str
+        
+        :return: a list of dicts {'tag':(str),'text':(str),'attributes':(dict)}
+        :rtype: list        
+        
+        """
+        
+        st='//gbxml:*[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        return xml_functions.get_children_list(element)
+    
+    
     
     # campus query methods
     
@@ -168,6 +206,67 @@ class Gbxml():
         
         return xml_functions.get_child_tag_text(element,child_tag)
     
+    
+    # building query methods
+    
+    def get_building_space_ids(self,id):
+        """Returns the ids of all spaces in a building
+        
+        :param id: a Building element id
+        :type id: str
+        
+        :return: a list of Space ids
+        :rtype: list
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Building[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get space ids
+        return building_functions.get_space_ids(element)
+    
+    
+    def get_building_surface_ids(self,id):
+        """Returns the ids of all surfaces in a building
+        
+        :param id: a Building element id
+        :type id: str
+        
+        :return: a list of Surface ids
+        :rtype: list
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Building[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get surface ids
+        return building_functions.get_surface_ids(element)
+    
+    
+    
+    # space query methods
+    
+    def get_space_surface_ids(self,id):
+        """Returns the ids of all surfaces adjacent to a space
+        
+        :param id: a Space element id
+        :type id: str
+        
+        :return: a list of surface ids
+        :rtype: list
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Building/gbxml:Space[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get surface ids
+        return space_functions.get_surface_ids(element)
     
     
     # construction query methods
@@ -369,11 +468,82 @@ class Gbxml():
     
     # opening query methods
     
+    def get_opening_surface_id(self,id):
+        """Returns the parent surface id of an opening
+        
+        :param id: a Opening element id
+        :type id: str
+        
+        :return: a Surface id
+        :rtype: str
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Surface/gbxml:Opening[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get surface id
+        return opening_functions.get_surface_id(element)
     
     
+    def get_opening_coordinates(self,id):
+        """Returns the coordinates of an opening
+        
+        :param id: a Opening element id
+        :type id: str
+        
+        :return: a list of coordinate tuples (x,y,z)
+        :rtype: list (of tuples)
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Surface/gbxml:Opening[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get coordinates
+        return opening_functions.get_coordinates(element)
     
     
+    def get_opening_area(self,id):
+        """Returns the area of an opening
+        
+        :param id: a Opening element id
+        :type id: str
+        
+        :return: the area value
+        :rtype: float or None
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Campus/gbxml:Surface/gbxml:Opening[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get area
+        return opening_functions.get_area(element)
     
+    
+    # zone query methods
+    
+    def get_zone_space_ids(self,id):
+        """Returns the ids of all spaces in a zone
+        
+        :param id: a Zone element id
+        :type id: str
+        
+        :return: a list of Space ids
+        :rtype: list
+        
+        """
+                  
+        # get element from id
+        st='./gbxml:Zone[@id="%s"]' % id
+        element=self._ElementTree.getroot().xpath(st,namespaces=self.ns)[0]
+        
+        # get space ids
+        return zone_functions.get_space_ids(element)
     
     
 ## OUTPUT
