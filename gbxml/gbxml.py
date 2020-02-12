@@ -431,6 +431,9 @@ class Gbxml():
     def get_surface_area(self,id):
         """Returns the area of a surface
         
+        This is calculated using the surface coordiantes and includes the 
+            area of any openings.
+        
         :param id: a Surface element id
         :type id: str
         
