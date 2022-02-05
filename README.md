@@ -3,12 +3,6 @@ A Python package for reading, writing and editing [gbXML](https://www.gbxml.org/
 
 Any problems? [Please raise an Issue on GitHub](https://github.com/building-energy/gbxml/issues)
 
-## To install
-
-```
-pip install gbxml
-```
-
 ## Quick demo
 
 The following code reads a gbXML file and prints the ids of all 'Building' nodes:
