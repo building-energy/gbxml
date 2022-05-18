@@ -1,4 +1,14 @@
+
+
+---
+**PLEASE NOTE:** THIS PACKAGE IS NO LONGER BEING MAINTAINED.
+
+INSTEAD, PLEASE SEE THIS NEW PACKAGE FOR WORKING WITH gbXML FILES: https://github.com/stevenkfirth/xgbxml
+
+---
+
 # gbxml
+
 A Python package for reading, writing and editing [gbXML](https://www.gbxml.org/) files
 
 Any problems? [Please raise an Issue on GitHub](https://github.com/building-energy/gbxml/issues)
